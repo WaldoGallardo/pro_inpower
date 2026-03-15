@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+
+<html lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#003366",
+                        "background-light": "#f5f7f8",
+                        "background-dark": "#0f1923",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<!-- Top Navigation Bar -->
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-slate-200 dark:border-slate-800 px-6 lg:px-20 py-4 bg-white dark:bg-background-dark sticky top-0 z-50">
+<div class="flex items-center gap-8">
+<div class="flex items-center gap-3 text-primary dark:text-slate-100">
+<div class="size-8 flex items-center justify-center bg-primary rounded text-white">
+<span class="material-symbols-outlined">bolt</span>
+</div>
+<h2 class="text-xl font-bold leading-tight tracking-tight">Inpower</h2>
+</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-slate-700 dark:text-slate-300 text-sm font-semibold hover:text-primary transition-colors" href="#">Soluciones</a>
+<a class="text-slate-700 dark:text-slate-300 text-sm font-semibold hover:text-primary transition-colors" href="#">Productos</a>
+<a class="text-slate-700 dark:text-slate-300 text-sm font-semibold hover:text-primary transition-colors" href="#">Casos de Éxito</a>
+<a class="text-slate-700 dark:text-slate-300 text-sm font-semibold hover:text-primary transition-colors" href="#">Soporte</a>
+</nav>
+</div>
+<div class="flex items-center gap-4">
+<button class="p-2 text-slate-500 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-lg transition-colors">
+<span class="material-symbols-outlined">search</span>
+</button>
+<button class="hidden sm:flex items-center justify-center rounded-lg h-10 px-6 bg-primary text-white text-sm font-bold leading-normal transition-opacity hover:opacity-90">
+<span>Contacto</span>
+</button>
+</div>
+</header>
+<main class="flex-1">
+<!-- Hero Section -->
+<section class="relative min-h-[520px] flex items-center px-6 lg:px-20 py-20 overflow-hidden">
+<div class="absolute inset-0 z-0">
+<div class="absolute inset-0 bg-gradient-to-r from-primary/90 via-primary/70 to-transparent z-10"></div>
+<img alt="Industrial Manufacturing Facility" class="w-full h-full object-cover" data-alt="Modern high-tech industrial manufacturing facility interior" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBHCCLLO51jd0UZKSKvyiVOVsviP9LklZPOiR1viASHh_cN1Gi50lNszXNMzJc_cdO4tOZ-jlA_YSVG92oTXGHvcQgdVmbkpYoZjTMQjvlipykPHVX7xhp5bsqFAlxyzFeE5hykVe1dTmJE7YQRYNERgD8A-vd-zRQ1r9M0PVj84OFRqBUXqD-rZrkfxns_aKNT6-beyS-5kkRM9MMf8yG1Forli4crYzXsjjjqpaHtKTFiNav3Rdq3JR-5yf7gI7FBmAy0iFvcssE9"/>
+</div>
+<div class="relative z-20 max-w-3xl text-white">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-xs font-bold uppercase tracking-widest mb-6">
+<span class="size-2 rounded-full bg-blue-400 animate-pulse"></span>
+                            Sector Manufactura
+                        </div>
+<h1 class="text-4xl lg:text-6xl font-black leading-tight mb-6">
+                            Soluciones para Manufactura e Industria Pesada
+                        </h1>
+<p class="text-lg lg:text-xl font-normal text-slate-200 mb-10 max-w-2xl leading-relaxed">
+                            Optimice costos, asegure la continuidad y cumpla con estándares internacionales mediante monitoreo inteligente de Janitza.
+                        </p>
+<div class="flex flex-wrap gap-4">
+<button class="flex items-center justify-center rounded-lg h-14 px-8 bg-white text-primary text-base font-bold transition-transform hover:scale-105">
+                                Solicitar Consultoría Técnica
+                            </button>
+<button class="flex items-center justify-center rounded-lg h-14 px-8 bg-transparent border-2 border-white/30 text-white text-base font-bold backdrop-blur-sm hover:bg-white/10 transition-colors">
+                                Ver Portafolio
+                            </button>
+</div>
+</div>
+</section>
+<!-- Desafíos del Sector -->
+<section class="px-6 lg:px-20 py-20 bg-background-light dark:bg-background-dark">
+<div class="max-w-6xl mx-auto">
+<div class="text-center mb-16">
+<h2 class="text-3xl font-bold text-primary dark:text-slate-100 mb-4">Desafíos Críticos del Sector</h2>
+<p class="text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">Identificamos los puntos de dolor que afectan la productividad y rentabilidad de la industria moderna.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="bg-white dark:bg-slate-800/50 p-8 rounded-xl border border-slate-200 dark:border-slate-700 shadow-sm hover:shadow-md transition-shadow">
+<div class="size-14 bg-primary/10 rounded-lg flex items-center justify-center text-primary mb-6">
+<span class="material-symbols-outlined text-3xl">payments</span>
+</div>
+<h3 class="text-xl font-bold mb-3 dark:text-white">Altos costos energéticos</h3>
+<p class="text-slate-600 dark:text-slate-400 leading-relaxed">Identificación de ineficiencias en tiempo real y gestión de picos de demanda para reducir la facturación eléctrica.</p>
+</div>
+<div class="bg-white dark:bg-slate-800/50 p-8 rounded-xl border border-slate-200 dark:border-slate-700 shadow-sm hover:shadow-md transition-shadow">
+<div class="size-14 bg-primary/10 rounded-lg flex items-center justify-center text-primary mb-6">
+<span class="material-symbols-outlined text-3xl">emergency_home</span>
+</div>
+<h3 class="text-xl font-bold mb-3 dark:text-white">Paradas no programadas</h3>
+<p class="text-slate-600 dark:text-slate-400 leading-relaxed">Protección de maquinaria crítica mediante el monitoreo de la calidad de energía y detección temprana de fallas.</p>
+</div>
+<div class="bg-white dark:bg-slate-800/50 p-8 rounded-xl border border-slate-200 dark:border-slate-700 shadow-sm hover:shadow-md transition-shadow">
+<div class="size-14 bg-primary/10 rounded-lg flex items-center justify-center text-primary mb-6">
+<span class="material-symbols-outlined text-3xl">verified</span>
+</div>
+<h3 class="text-xl font-bold mb-3 dark:text-white">Cumplimiento de Normas</h3>
+<p class="text-slate-600 dark:text-slate-400 leading-relaxed">Gestión automatizada para cumplir con certificaciones ISO 50001 y estándares internacionales de eficiencia energética.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Nuestra Solución: Arquitectura Inteligente -->
+<section class="px-6 lg:px-20 py-24 bg-white dark:bg-slate-900 overflow-hidden">
+<div class="max-w-6xl mx-auto">
+<div class="flex flex-col lg:flex-row items-center gap-16">
+<div class="w-full lg:w-1/2">
+<h2 class="text-sm font-bold text-primary uppercase tracking-[0.2em] mb-4">Nuestra Solución</h2>
+<h3 class="text-4xl font-extrabold mb-6 dark:text-white leading-tight">Arquitectura Digital Janitza: El Cerebro de su Planta</h3>
+<p class="text-slate-600 dark:text-slate-400 mb-8 leading-relaxed">
+                                    Integramos hardware de clase mundial (Serie UMG) con el software GridVis® para crear un ecosistema de monitoreo 360°. Proteja su inversión con tecnología RCM (Residual Current Monitoring) y asegure la vida útil de su robótica sensible.
+                                </p>
+<ul class="space-y-4 mb-8">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary mt-1">check_circle</span>
+<div>
+<p class="font-bold dark:text-white">Monitoreo RCM de Corriente Residual</p>
+<p class="text-sm text-slate-500">Detección de fallas a tierra antes de que causen incendios o paros.</p>
+</div>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary mt-1">check_circle</span>
+<div>
+<p class="font-bold dark:text-white">Power Quality (PQ)</p>
+<p class="text-sm text-slate-500">Análisis de armónicos y transitorios para proteger variadores y PLCs.</p>
+</div>
+</li>
+</ul>
+</div>
+<div class="w-full lg:w-1/2 relative">
+<div class="bg-primary/5 rounded-2xl p-4 lg:p-8 border border-primary/10">
+<img alt="Industrial Automation Architecture" class="rounded-xl shadow-2xl w-full" data-alt="Technical diagram showing factory automation and power monitoring" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD4WsCH5teP14rYYgUkmOG0kRst-7O4FcJPwsxrdBALsuC4YWaD7ijfNgk97xwXxtlUl2NHL2UZj38YpQ1Ikn7Su0LyWQPAw0BYX2iuLXQhWdiPc4FVgYNwrNz1lnlqhkzcxmIERgSriVfLjCApQvuYBJH3xT4qDa7Er4gDkIDZwDVEBtO4OXQN8k62qdhL_parzfd8Ng9iy2yrLCxweRRHg_estWz1h8IOxTk_a_sZbYPXRjSq8hHPHFzGBzfy45W4W-FrwepeXZQ6"/>
+<div class="absolute -bottom-6 -left-6 bg-white dark:bg-slate-800 p-6 rounded-xl shadow-xl border border-slate-100 dark:border-slate-700 hidden md:block">
+<div class="flex items-center gap-4">
+<div class="size-12 rounded-full bg-green-500/20 flex items-center justify-center text-green-600">
+<span class="material-symbols-outlined">analytics</span>
+</div>
+<div>
+<p class="text-xs text-slate-400 uppercase font-bold">Estado del Sistema</p>
+<p class="text-lg font-bold dark:text-white">99.9% Disponibilidad</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Productos Recomendados -->
+<section class="px-6 lg:px-20 py-20 bg-background-light dark:bg-background-dark">
+<div class="max-w-6xl mx-auto">
+<div class="flex justify-between items-end mb-12">
+<div>
+<h2 class="text-3xl font-bold dark:text-white">Equipamiento de Precisión</h2>
+<p class="text-slate-600 dark:text-slate-400 mt-2">Tecnología recomendada para aplicaciones industriales pesadas.</p>
+</div>
+<a class="text-primary font-bold flex items-center gap-2 hover:underline" href="#">
+                                Ver catálogo completo <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Product 1 -->
+<div class="group bg-white dark:bg-slate-800 rounded-xl p-6 border border-slate-200 dark:border-slate-700 transition-all hover:-translate-y-2">
+<div class="aspect-square bg-slate-100 dark:bg-slate-900 rounded-lg mb-6 overflow-hidden">
+<img alt="UMG 801 Analyzer" class="w-full h-full object-cover transition-transform group-hover:scale-110" data-alt="Janitza UMG 801 high-end power quality analyzer" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCjhBGN2FgPKNo445EqEgytvNcHAKQOx3yJiLRu8puQT8whY1WwHKaWp49QoO3fX6DxlFmVWoqhrbFN0wI6H2zrfZYOtKi1rGmDdtgmQCitjFSMitPkHRcuEupPftlz2qqzVZGxXSvj6KAg38wZolEPuMgm0XzpoW4LH0EuLbZ_DhsFpJw7xHwK36Q37t6VFOJCT-0SKihJR6Ow-mC9hpDaKIalow7bN8ImSlr2GhfzIJXa6sw5T9wekJzoXKnrufMoL7M4fQLgssr-"/>
+</div>
+<h4 class="text-lg font-bold dark:text-white">UMG 801</h4>
+<p class="text-sm text-slate-500 mb-4">Analizador de alta gama con tecnología RCM.</p>
+<button class="w-full py-2 bg-primary/10 text-primary font-bold rounded hover:bg-primary hover:text-white transition-colors">Especificaciones</button>
+</div>
+<!-- Product 2 -->
+<div class="group bg-white dark:bg-slate-800 rounded-xl p-6 border border-slate-200 dark:border-slate-700 transition-all hover:-translate-y-2">
+<div class="aspect-square bg-slate-100 dark:bg-slate-900 rounded-lg mb-6 overflow-hidden">
+<img alt="UMG 806 Analyzer" class="w-full h-full object-cover transition-transform group-hover:scale-110" data-alt="Janitza UMG 806 modular power analyzer" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDnk5qu1tl3t8zJNm4j5I-tLyx8AOfHvb0SKEAiseYKHnfaFaG3qunkqRvFfECDfqD89Eqnyw3jSKjfmP9mPeFEYQTD4mhEM721nmAc5QIp8YkaJ9fRuP4zwHB5tBV2VTb2H5Vw3rSunFq1abB8y2CmEN0Dqmn-hLACIoTvj46pmCY0PwnhUuoUPT898Ftkqt5b4-QOzm6l_stKJWi5HObVnRIzSTpCjxepmKyB_nhI5sjWgDYfW1f1qzNiVOKGMxXs2Ci5Le_H5AtT"/>
+</div>
+<h4 class="text-lg font-bold dark:text-white">UMG 806</h4>
+<p class="text-sm text-slate-500 mb-4">Medición modular para grandes instalaciones.</p>
+<button class="w-full py-2 bg-primary/10 text-primary font-bold rounded hover:bg-primary hover:text-white transition-colors">Especificaciones</button>
+</div>
+<!-- Product 3 -->
+<div class="group bg-white dark:bg-slate-800 rounded-xl p-6 border border-slate-200 dark:border-slate-700 transition-all hover:-translate-y-2">
+<div class="aspect-square bg-slate-100 dark:bg-slate-900 rounded-lg mb-6 overflow-hidden">
+<img alt="GridVis Software" class="w-full h-full object-cover transition-transform group-hover:scale-110" data-alt="GridVis software dashboard visualization for energy management" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB56czIh6uXNjYit5p6y56oZ2vKROf6LQ4OpmlOkURlU6k-Vpj2OcqJvjhplykv_ddH-IxboPElEAO0_2d7QbTeHn4U9o3eMP9fWJJFxNG4IICRRMGSbvvy9Zka1iMJfFuxavMSSO0lgA5jzPYNC00a5InXJVHWY5dgSxGw2fowe4ufc8MratM9tmLvkTnl0eu4M6SUrkumqplDDT4CMLuXSmsLYXPlXEYc4XVplj2WBLcs0CC74xOgDXm4OhTEnleVmBrRQTqWB4Zk"/>
+</div>
+<h4 class="text-lg font-bold dark:text-white">GridVis®</h4>
+<p class="text-sm text-slate-500 mb-4">Software de gestión energética profesional.</p>
+<button class="w-full py-2 bg-primary/10 text-primary font-bold rounded hover:bg-primary hover:text-white transition-colors">Especificaciones</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Caso de Éxito Relacionado -->
+<section class="px-6 lg:px-20 py-20 bg-primary text-white">
+<div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12">
+<div class="flex-1">
+<h4 class="text-blue-300 font-bold uppercase tracking-widest text-sm mb-4">Caso de Éxito</h4>
+<h3 class="text-3xl font-extrabold mb-6">Reducción de armónicos en planta de fundición</h3>
+<p class="text-lg text-slate-300 mb-8 leading-relaxed">
+                                Descubra cómo una importante fundición redujo sus fallas en equipos electrónicos en un 40% y optimizó su consumo mediante la implementación de filtros activos y monitoreo Janitza.
+                            </p>
+<button class="flex items-center gap-2 font-bold hover:gap-4 transition-all">
+                                Leer estudio de caso completo <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+<div class="flex-1 w-full">
+<div class="relative rounded-2xl overflow-hidden aspect-video shadow-2xl">
+<img alt="Foundry plant" class="w-full h-full object-cover" data-alt="Professional high-quality industrial steel foundry facility" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAU6RhR95TPj0QGDcE8PMr945Dg6FBEyaAv1OUv2ISXoYbHV6DulBMP8al1glGsUL4l-QeaZQs-p8TfZ9Yi6eJH8qq57WfiMAQqP08WzGvZmC3WLaFJst98ICUQfXC4ydpNgu9-Cxqll4yjiHxVcbGb9FxB86zsFtN5vwHQvAvdRrlj9wQrpBvA8WAQ_GUyL0D_7jrYae6pL9kZy00a2iebuhd-4YYX4FFWAdERA0TrKSqnX_q9bdE-kaks_YfSbUIUo26c7b3Ps0w-"/>
+<div class="absolute inset-0 bg-primary/20"></div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-white dark:bg-background-dark border-t border-slate-200 dark:border-slate-800 px-6 lg:px-20 py-16">
+<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
+<div class="md:col-span-1">
+<div class="flex items-center gap-3 text-primary dark:text-slate-100 mb-6">
+<div class="size-8 flex items-center justify-center bg-primary rounded text-white">
+<span class="material-symbols-outlined">bolt</span>
+</div>
+<h2 class="text-xl font-bold">Inpower</h2>
+</div>
+<p class="text-sm text-slate-500 dark:text-slate-400 leading-relaxed">
+                            Expertos en gestión de energía y calidad de potencia. Partner oficial de Janitza para soluciones industriales inteligentes.
+                        </p>
+</div>
+<div>
+<h4 class="font-bold mb-6 dark:text-white">Soluciones</h4>
+<ul class="space-y-4 text-sm text-slate-500 dark:text-slate-400">
+<li><a class="hover:text-primary transition-colors" href="#">Manufactura</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Data Centers</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Infraestructura</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Energías Renovables</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold mb-6 dark:text-white">Compañía</h4>
+<ul class="space-y-4 text-sm text-slate-500 dark:text-slate-400">
+<li><a class="hover:text-primary transition-colors" href="#">Acerca de nosotros</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Casos de Éxito</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Blog Técnico</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Privacidad</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold mb-6 dark:text-white">Contacto</h4>
+<div class="space-y-4 text-sm text-slate-500 dark:text-slate-400">
+<p class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-base">mail</span> contacto@inpower.com</p>
+<p class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-base">phone</span> +52 (55) 1234 5678</p>
+<p class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-base">location_on</span> Ciudad de México, México</p>
+</div>
+</div>
+</div>
+<div class="max-w-7xl mx-auto mt-16 pt-8 border-t border-slate-100 dark:border-slate-800 flex flex-col md:row justify-between items-center gap-4">
+<p class="text-xs text-slate-400">© 2024 Inpower Solutions. Todos los derechos reservados.</p>
+<div class="flex gap-6">
+<a class="text-slate-400 hover:text-primary" href="#"><span class="material-symbols-outlined">share</span></a>
+<a class="text-slate-400 hover:text-primary" href="#"><span class="material-symbols-outlined">public</span></a>
+</div>
+</div>
+</footer>
+</div>
+</div>
+</body></html>

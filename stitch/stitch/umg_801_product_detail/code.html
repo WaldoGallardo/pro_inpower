@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+
+<html lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#003366",
+                        "background-light": "#f5f7f8",
+                        "background-dark": "#0f1923",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 transition-colors duration-300">
+<div class="relative flex min-h-screen w-full flex-col overflow-x-hidden">
+<header class="sticky top-0 z-50 bg-white/80 dark:bg-background-dark/80 backdrop-blur-md border-b border-slate-200 dark:border-slate-800 px-4 md:px-10 py-3">
+<div class="max-w-7xl mx-auto flex items-center justify-between">
+<div class="flex items-center gap-8">
+<div class="flex items-center gap-2 text-primary dark:text-blue-400">
+<span class="material-symbols-outlined text-3xl">developer_board</span>
+<h1 class="text-xl font-black leading-tight tracking-tight uppercase">Janitza</h1>
+</div>
+<nav class="hidden lg:flex items-center gap-6">
+<a class="text-slate-600 dark:text-slate-300 text-sm font-semibold hover:text-primary dark:hover:text-blue-400 transition-colors" href="#">Productos</a>
+<a class="text-slate-600 dark:text-slate-300 text-sm font-semibold hover:text-primary dark:hover:text-blue-400 transition-colors" href="#">Soluciones</a>
+<a class="text-slate-600 dark:text-slate-300 text-sm font-semibold hover:text-primary dark:hover:text-blue-400 transition-colors" href="#">Soporte</a>
+<a class="text-slate-600 dark:text-slate-300 text-sm font-semibold hover:text-primary dark:hover:text-blue-400 transition-colors" href="#">Contacto</a>
+</nav>
+</div>
+<div class="flex items-center gap-4">
+<div class="hidden sm:flex items-center bg-slate-100 dark:bg-slate-800 rounded-lg px-3 py-1.5 border border-slate-200 dark:border-slate-700">
+<span class="material-symbols-outlined text-slate-400 text-lg">search</span>
+<input class="bg-transparent border-none focus:ring-0 text-sm w-40 placeholder:text-slate-400" placeholder="Buscar..." type="text"/>
+</div>
+<button class="bg-primary text-white px-5 py-2 rounded-lg text-sm font-bold hover:bg-opacity-90 transition-all">
+                        Login
+                    </button>
+</div>
+</div>
+</header>
+<main class="flex-1 w-full max-w-7xl mx-auto px-4 py-8">
+<nav class="flex items-center gap-2 text-sm text-slate-500 dark:text-slate-400 mb-8">
+<a class="hover:text-primary" href="#">Inicio</a>
+<span class="material-symbols-outlined text-xs">chevron_right</span>
+<a class="hover:text-primary" href="#">Analizadores de Energía</a>
+<span class="material-symbols-outlined text-xs">chevron_right</span>
+<span class="text-slate-900 dark:text-slate-100 font-medium">UMG 801</span>
+</nav>
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
+<div class="space-y-6">
+<div class="bg-white dark:bg-slate-900 rounded-xl p-8 border border-slate-200 dark:border-slate-800 shadow-sm flex items-center justify-center aspect-square relative group">
+<div class="absolute inset-0 bg-primary/5 opacity-0 group-hover:opacity-100 transition-opacity rounded-xl"></div>
+<img alt="Janitza UMG 801 main unit with modular expansions" class="max-w-full h-auto object-contain" data-alt="Janitza UMG 801 main unit and expansion modules" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBDDK2H_Sa99wt23oc5cAyoKUaEqsw38iS0Xhor61urhIUWLWN-ppLli5cksI5mmrczs6sKHtDrhOSnZo-zQ7dR6egGnYp2nkxijd-9bhgNK0MeywQWL6blbmJt1yEqreuQK4CI_31GQoFudXEX_4jk6z1EMUiZ67ED-M9YpHyWg2hikvoH45jADRR_2iphyif1PhuxxFAXxxB_-AkO7DC35uy-pzDljueG6ADN9_C-KvbDu4kT2ySDjhA3sBRyTLYYJIz70i98-Lf0"/>
+</div>
+<div class="grid grid-cols-4 gap-4">
+<div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 p-2 rounded-lg cursor-pointer hover:border-primary">
+<img alt="Front view" class="w-full" data-alt="Front view of UMG 801" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBARFWNEVTsk886FNS82NO-IFXkTiDCodW6OLS0czjIwlm0sAbakFmeme_wYl2wDd-D9PBEbtWdWmv2QyQnA-l5iilDsrJ3sqK6DMllLG1HNdFi5Y7cFRa9pxbtK8YTavrO_r6hvqGtI9G_hEIpW6-ssC8aFEIZxPSxBddy7Jxbp1IZ0pUNmA0FUr0DI5McXhhv0tTmY7MpV-aoem6OaWSTNGYyYDCttA62EgUavnbypJYd7Ec9IXoSRQA5U4kLXTzBO4y2pJwcnA6U"/>
+</div>
+<div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 p-2 rounded-lg cursor-pointer">
+<img alt="Side expansion" class="w-full" data-alt="Modular expansion unit detail" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCxgllWEJUkZw7bVCvMhlgNzSqzeEelPvG2v6A8YAfUpN7klEW8Q5lJC0YLfHTVl0U90Lh_WmAxHsbBAerCf_FNoVWMFfuLkry2Hfg2Ks4PxZ47jcw_dVP0jjERnFbVbK6gxpX-EO4_zj1OTnWJDCm4at_2LGiZbhta2WOCWlcaap5jUAQ80k7sIHqnaeFyP0nOXos9fPF5YHTPs36O1AHRQVajzWAGw7kixghaj842rnWjXrdAEYrDC17DEDoDpDJJu-U0CnJI3iaZ"/>
+</div>
+<div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 p-2 rounded-lg cursor-pointer">
+<img alt="Ports detail" class="w-full" data-alt="Communication ports detail view" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQen6b5267-xQqfx3KriWPJz5Br4BephRJeFgJOSyS3_AInbL5kdN9aiQ9NRirsmPsEY5xUIaGnjUiJ1Y7tMkfmmeLjZgzLI1DcwlNZSkqUZT5NLaOPAjdTaL0LxhPwD2r5gVX6BVr9FJu81Jn_tA0jf423r-blbOyadc7nN1kdA4qn8uqUNhsMjLrVqD5VrW9_fHczesAc5fHLMQMO7Yuu6sAbZqstABDA6u5fxB0d7DxH4msRdUtJAM5pgsrxktH09I-LKfuz6cq"/>
+</div>
+<div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 p-2 rounded-lg cursor-pointer">
+<img alt="Display UI" class="w-full" data-alt="Interface screen on the device" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC-lf85NdoufOQkqgwdnX0u4i2Im53en4MVu1zV-HU5KvFQsYn0VVktpYUYv2MJIULGpJi2jhpQd_v2OTS6sAAlIkDARlUH8Y9BkkxA4wcexIh0MEonneyNeSOXZd4a2hUKX2gGWk652pecq-_AtdGpc3Cm6X1EJEgALcGMOFinhYYOMsMWEoRd2PpYbJHgy2jlN3e8_InK-bm_SnRbNHj-lEqQXMWCFj-WMlspGwCo0W172lCGpCjnwP5tO0fquRNogmKHd11-4eKE"/>
+</div>
+</div>
+</div>
+<div class="flex flex-col justify-center">
+<span class="inline-block px-3 py-1 bg-primary/10 text-primary dark:text-blue-400 text-xs font-bold rounded-full mb-4 self-start tracking-wider uppercase">High Performance Modular Analyzer</span>
+<h2 class="text-4xl md:text-5xl font-black text-slate-900 dark:text-white leading-tight mb-4">
+                        Analizador de Energía UMG 801 - Integración Industrial y Escalabilidad
+                    </h2>
+<p class="text-lg text-slate-600 dark:text-slate-400 mb-8 leading-relaxed">
+                        El UMG 801 es el nuevo estándar para la medición de energía modular. Diseñado para centros de datos y procesos industriales complejos que requieren una visibilidad total y alta disponibilidad.
+                    </p>
+<div class="grid grid-cols-2 gap-6 mb-10">
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary bg-primary/10 p-2 rounded-lg">rebase_edit</span>
+<div>
+<h4 class="font-bold text-sm">92 Canales</h4>
+<p class="text-xs text-slate-500">Máxima densidad de puntos</p>
+</div>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary bg-primary/10 p-2 rounded-lg">hub</span>
+<div>
+<h4 class="font-bold text-sm">OPC UA Nativo</h4>
+<p class="text-xs text-slate-500">Integración IT/OT directa</p>
+</div>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary bg-primary/10 p-2 rounded-lg">security</span>
+<div>
+<h4 class="font-bold text-sm">Monitoreo RCM</h4>
+<p class="text-xs text-slate-500">Detección corriente residual</p>
+</div>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary bg-primary/10 p-2 rounded-lg">device_thermostat</span>
+<div>
+<h4 class="font-bold text-sm">Temperatura</h4>
+<p class="text-xs text-slate-500">Monitoreo térmico integrado</p>
+</div>
+</div>
+</div>
+<div class="flex flex-col sm:flex-row gap-4">
+<button class="flex-1 bg-primary text-white py-4 px-8 rounded-lg font-bold text-lg hover:shadow-lg hover:shadow-primary/20 transition-all flex items-center justify-center gap-2">
+<span class="material-symbols-outlined">request_quote</span>
+                            Solicitar Cotización
+                        </button>
+<button class="bg-slate-200 dark:bg-slate-800 text-slate-800 dark:text-white py-4 px-8 rounded-lg font-bold hover:bg-slate-300 dark:hover:bg-slate-700 transition-all flex items-center justify-center">
+                            Ver Especificaciones
+                        </button>
+</div>
+</div>
+</div>
+<section class="border-t border-slate-200 dark:border-slate-800 pt-16">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+<div class="md:col-span-2 space-y-12">
+<div>
+<h3 class="text-2xl font-bold mb-6 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">description</span>
+                                Descripción Técnica
+                            </h3>
+<div class="prose prose-slate dark:prose-invert max-w-none text-slate-600 dark:text-slate-400 space-y-4">
+<p>
+                                    El UMG 801 permite la monitorización continua de la calidad de energía y la gestión de picos de carga en entornos críticos. Su arquitectura modular permite expandir la unidad base con hasta 10 módulos adicionales, cubriendo un total de 92 canales de medición.
+                                </p>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-6">
+<div class="bg-white dark:bg-slate-900 p-6 rounded-xl border border-slate-100 dark:border-slate-800">
+<h5 class="font-bold text-slate-900 dark:text-white mb-2">Data Centers</h5>
+<p class="text-sm">Garantiza el tiempo de actividad (Uptime) mediante el análisis de armónicos hasta el orden 63 y la detección temprana de fallos de aislamiento mediante RCM.</p>
+</div>
+<div class="bg-white dark:bg-slate-900 p-6 rounded-xl border border-slate-100 dark:border-slate-800">
+<h5 class="font-bold text-slate-900 dark:text-white mb-2">Industria Pesada</h5>
+<p class="text-sm">Robustez extrema y capacidad de integración con sistemas SCADA y MES existentes mediante protocolos industriales estándar.</p>
+</div>
+</div>
+</div>
+</div>
+<div>
+<h3 class="text-2xl font-bold mb-6 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">lan</span>
+                                Interfaces y Protocolos
+                            </h3>
+<div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
+<div class="bg-slate-100 dark:bg-slate-800 p-4 rounded-lg text-center font-bold text-sm">Ethernet (TCP/IP)</div>
+<div class="bg-slate-100 dark:bg-slate-800 p-4 rounded-lg text-center font-bold text-sm">Modbus RTU/TCP</div>
+<div class="bg-slate-100 dark:bg-slate-800 p-4 rounded-lg text-center font-bold text-sm">OPC UA</div>
+<div class="bg-slate-100 dark:bg-slate-800 p-4 rounded-lg text-center font-bold text-sm">BACnet (Optional)</div>
+<div class="bg-slate-100 dark:bg-slate-800 p-4 rounded-lg text-center font-bold text-sm">SNMP</div>
+<div class="bg-slate-100 dark:bg-slate-800 p-4 rounded-lg text-center font-bold text-sm">MQTT</div>
+</div>
+</div>
+<div>
+<h3 class="text-2xl font-bold mb-6 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">desktop_windows</span>
+                                Software Relacionado
+                            </h3>
+<div class="bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-800 overflow-hidden">
+<div class="p-8 flex flex-col md:flex-row items-center gap-8">
+<div class="flex-1">
+<h4 class="text-xl font-bold mb-3">GridVis® Preview</h4>
+<p class="text-slate-600 dark:text-slate-400 mb-4">Visualice sus datos de energía en tiempo real. GridVis® ofrece herramientas de análisis potentes para configurar sus equipos Janitza y generar informes automáticos de cumplimiento (EN 50160).</p>
+<button class="text-primary font-bold hover:underline flex items-center gap-1">
+                                            Saber más sobre GridVis
+                                            <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+<div class="w-full md:w-64 aspect-video bg-slate-200 dark:bg-slate-800 rounded-lg overflow-hidden border border-slate-300 dark:border-slate-700">
+<img alt="GridVis Dashboard" class="w-full h-full object-cover" data-alt="GridVis software dashboard preview showing energy graphs" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAkZ_q5ihM7T1YNQi7OYRiebM4VEns7Ep71ZadFr52twTdprtwHiLrYLm833-aCbuk1ElMaM4JBXlo5vOYC-jpdYZzbBmSn0mb7DrAE-dP8KwQxvstbtOTu7hl6cDODmPlCPR87bIKAnTjbulMLiiL-g-_BY_qjcCXde0JY017_ZqCNOKmRhz3G9OwExDgCKL8X8UtrvLy-h0elv8sZxJlGnEqiUZjTCOiYAs0S97LjV_PIj-VJVjxHwYUoNJcsWIU5mW2G6MB6PwMi"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="space-y-8">
+<div class="bg-white dark:bg-slate-900 p-6 rounded-xl border border-slate-200 dark:border-slate-800 sticky top-24">
+<h3 class="text-xl font-bold mb-6 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">download</span>
+                                Descargas
+                            </h3>
+<div class="space-y-4">
+<a class="flex items-center justify-between p-4 bg-slate-50 dark:bg-slate-800/50 rounded-lg group hover:bg-primary/5 transition-colors" href="#">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-red-500">picture_as_pdf</span>
+<span class="text-sm font-medium">Datasheet UMG 801 (ES)</span>
+</div>
+<span class="material-symbols-outlined text-slate-400 group-hover:text-primary transition-colors">download</span>
+</a>
+<a class="flex items-center justify-between p-4 bg-slate-50 dark:bg-slate-800/50 rounded-lg group hover:bg-primary/5 transition-colors" href="#">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-blue-500">menu_book</span>
+<span class="text-sm font-medium">Manual de Operación</span>
+</div>
+<span class="material-symbols-outlined text-slate-400 group-hover:text-primary transition-colors">download</span>
+</a>
+<a class="flex items-center justify-between p-4 bg-slate-50 dark:bg-slate-800/50 rounded-lg group hover:bg-primary/5 transition-colors" href="#">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-slate-500">architecture</span>
+<span class="text-sm font-medium">Archivos CAD / BIM</span>
+</div>
+<span class="material-symbols-outlined text-slate-400 group-hover:text-primary transition-colors">download</span>
+</a>
+<a class="flex items-center justify-between p-4 bg-slate-50 dark:bg-slate-800/50 rounded-lg group hover:bg-primary/5 transition-colors" href="#">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-green-500">description</span>
+<span class="text-sm font-medium">Certificado de Calibración</span>
+</div>
+<span class="material-symbols-outlined text-slate-400 group-hover:text-primary transition-colors">download</span>
+</a>
+</div>
+<div class="mt-8 pt-8 border-t border-slate-200 dark:border-slate-800">
+<h4 class="font-bold mb-4">¿Necesita asesoría técnica?</h4>
+<p class="text-sm text-slate-500 dark:text-slate-400 mb-6">Nuestros ingenieros le ayudarán a dimensionar la solución ideal para su proyecto.</p>
+<button class="w-full py-3 border-2 border-primary text-primary dark:text-blue-400 font-bold rounded-lg hover:bg-primary hover:text-white transition-all">
+                                    Contactar Soporte
+                                </button>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer class="bg-slate-100 dark:bg-slate-900 border-t border-slate-200 dark:border-slate-800 py-12 px-4">
+<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
+<div class="col-span-1 md:col-span-2">
+<div class="flex items-center gap-2 text-primary dark:text-blue-400 mb-6">
+<span class="material-symbols-outlined text-3xl">developer_board</span>
+<h1 class="text-xl font-black uppercase">Janitza</h1>
+</div>
+<p class="text-slate-500 dark:text-slate-400 max-w-sm">
+                        Líder mundial en soluciones de monitorización de energía y calidad de suministro para un futuro digital y eficiente.
+                    </p>
+</div>
+<div>
+<h5 class="font-bold mb-4">Navegación</h5>
+<ul class="space-y-2 text-sm text-slate-500 dark:text-slate-400">
+<li><a class="hover:text-primary" href="#">Productos</a></li>
+<li><a class="hover:text-primary" href="#">Servicios</a></li>
+<li><a class="hover:text-primary" href="#">Casos de Éxito</a></li>
+<li><a class="hover:text-primary" href="#">Privacidad</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-bold mb-4">Contacto Global</h5>
+<ul class="space-y-2 text-sm text-slate-500 dark:text-slate-400">
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-sm">mail</span>
+                            info@janitza.com
+                        </li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-sm">phone</span>
+                            +49 6441 9642-0
+                        </li>
+</ul>
+</div>
+</div>
+<div class="max-w-7xl mx-auto border-t border-slate-200 dark:border-slate-800 mt-12 pt-8 text-center text-xs text-slate-400">
+                © 2024 Janitza electronics GmbH. Todos los derechos reservados.
+            </div>
+</footer>
+</div>
+</body></html>

@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>GridVis by Janitza | Central Energy Intelligence</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#003366",
+                        "background-light": "#f5f7f8",
+                        "background-dark": "#0f1923",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; }
+        .grid-pattern {
+            background-image: radial-gradient(circle, #00336615 1px, transparent 1px);
+            background-size: 30px 30px;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100">
+<div class="relative flex min-h-screen flex-col overflow-x-hidden">
+<!-- Navigation -->
+<header class="sticky top-0 z-50 w-full border-b border-slate-200 dark:border-slate-800 bg-white/80 dark:bg-background-dark/80 backdrop-blur-md">
+<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+<div class="flex h-20 items-center justify-between">
+<div class="flex items-center gap-10">
+<div class="flex items-center gap-2 group cursor-pointer">
+<div class="size-8 bg-primary rounded flex items-center justify-center text-white">
+<span class="material-symbols-outlined text-2xl">leaderboard</span>
+</div>
+<h1 class="text-2xl font-black tracking-tighter text-primary dark:text-white uppercase">Janitza</h1>
+</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="#">Software</a>
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="#">Hardware</a>
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="#">Solutions</a>
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="#">Support</a>
+</nav>
+</div>
+<div class="flex items-center gap-4">
+<div class="hidden lg:flex relative">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-slate-400">search</span>
+<input class="pl-10 pr-4 py-2 bg-slate-100 dark:bg-slate-800 border-none rounded-lg text-sm w-64 focus:ring-2 focus:ring-primary" placeholder="Search systems..." type="text"/>
+</div>
+<button class="bg-primary text-white px-6 py-2.5 rounded-lg text-sm font-bold hover:bg-primary/90 transition-all shadow-lg shadow-primary/20">
+                            Contact Sales
+                        </button>
+</div>
+</div>
+</div>
+</header>
+<main class="flex-1">
+<!-- Hero Section -->
+<section class="relative pt-20 pb-32 overflow-hidden">
+<div class="absolute inset-0 grid-pattern -z-10"></div>
+<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+<div class="flex flex-col lg:flex-row items-center gap-16">
+<div class="flex-1 space-y-8">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-bold uppercase tracking-widest">
+<span class="relative flex h-2 w-2">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
+</span>
+                                Energy Intelligence v9.0
+                            </div>
+<h1 class="text-5xl lg:text-7xl font-black leading-[1.1] tracking-tight text-slate-900 dark:text-white">
+                                GridVis: The Central <span class="text-primary">Intelligence</span> for Energy.
+                            </h1>
+<p class="text-xl text-slate-600 dark:text-slate-400 max-w-2xl leading-relaxed">
+                                The software backbone for energy transparency, high-performance power quality analysis, and ISO 50001 compliance. Transform industrial raw data into actionable enterprise insights.
+                            </p>
+<div class="flex flex-wrap gap-4">
+<button class="bg-primary text-white px-8 py-4 rounded-xl font-bold flex items-center gap-2 hover:translate-y-[-2px] transition-all shadow-xl shadow-primary/30">
+                                    Request a Live Demo
+                                    <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+<button class="bg-white dark:bg-slate-800 text-slate-900 dark:text-white border border-slate-200 dark:border-slate-700 px-8 py-4 rounded-xl font-bold hover:bg-slate-50 dark:hover:bg-slate-700 transition-all">
+                                    Download Brochure
+                                </button>
+</div>
+</div>
+<div class="flex-1 relative">
+<div class="relative z-10 rounded-2xl border-8 border-slate-900 shadow-2xl overflow-hidden bg-slate-900">
+<img class="w-full h-auto opacity-90 hover:opacity-100 transition-opacity" data-alt="Modern energy management dashboard interface showing power quality graphs" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC9amnCVCRpCov7tuOUdPCZbiQOA3eaxdm7Uz_5MDlKihqfdCQfNtWDziwdy5Ze0gudFh79pZzR9loZZlbaAaKV2SE7a3tUfyonpUekEtquyflsq12yiLZY3AxpHsUPWDQWVRgkAJg9PPsMlx01tZ5yGLr8joW6WFaAI8RWJEJGhXkObeBdv60q7yHORHNx7zy40FcPGK5QvojVJRL24SAfQypFraL0H5iGSiXGcIL2qB1jCouAyK_aPnVXS4vYDtVtslAkr1T92loZ"/>
+</div>
+<!-- Decorative elements -->
+<div class="absolute -bottom-6 -left-6 w-48 h-48 bg-primary/10 rounded-full blur-3xl -z-10"></div>
+<div class="absolute -top-6 -right-6 w-64 h-64 bg-primary/20 rounded-full blur-3xl -z-10"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- Key Capabilities -->
+<section class="py-24 bg-white dark:bg-background-dark/50">
+<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+<div class="mb-16 text-center lg:text-left">
+<h2 class="text-base font-bold text-primary uppercase tracking-[0.2em] mb-4">Core Competencies</h2>
+<h3 class="text-4xl font-black text-slate-900 dark:text-white">Empowering Industrial Energy Excellence</h3>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+<!-- ISO 50001 -->
+<div class="group p-8 rounded-2xl bg-slate-50 dark:bg-slate-800/50 border border-slate-200 dark:border-slate-700 hover:border-primary transition-all hover:shadow-xl">
+<div class="size-12 rounded-xl bg-primary/10 text-primary flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-2xl">description</span>
+</div>
+<h4 class="text-xl font-bold mb-3">ISO 50001 Management</h4>
+<p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
+                                Automated reporting workflows and custom KPI tracking to achieve and maintain international energy standards effortlessly.
+                            </p>
+</div>
+<!-- Power Quality -->
+<div class="group p-8 rounded-2xl bg-slate-50 dark:bg-slate-800/50 border border-slate-200 dark:border-slate-700 hover:border-primary transition-all hover:shadow-xl">
+<div class="size-12 rounded-xl bg-primary/10 text-primary flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-2xl">bolt</span>
+</div>
+<h4 class="text-xl font-bold mb-3">Power Quality Analysis</h4>
+<p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
+                                Deep-dive event analysis and continuous compliance monitoring according to EN 50160 and IEEE 519.
+                            </p>
+</div>
+<!-- RCM Monitoring -->
+<div class="group p-8 rounded-2xl bg-slate-50 dark:bg-slate-800/50 border border-slate-200 dark:border-slate-700 hover:border-primary transition-all hover:shadow-xl">
+<div class="size-12 rounded-xl bg-primary/10 text-primary flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-2xl">security</span>
+</div>
+<h4 class="text-xl font-bold mb-3">RCM Monitoring</h4>
+<p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
+                                Continuous residual current monitoring for increased system safety, preventing unexpected downtime and fire hazards.
+                            </p>
+</div>
+<!-- Dashboards -->
+<div class="group p-8 rounded-2xl bg-slate-50 dark:bg-slate-800/50 border border-slate-200 dark:border-slate-700 hover:border-primary transition-all hover:shadow-xl">
+<div class="size-12 rounded-xl bg-primary/10 text-primary flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-2xl">dashboard</span>
+</div>
+<h4 class="text-xl font-bold mb-3">Visualization</h4>
+<p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
+                                Fully customizable web-based dashboards featuring real-time visualization of your entire power network.
+                            </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Software Architecture -->
+<section class="py-24 bg-slate-50 dark:bg-background-dark">
+<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+<div class="flex flex-col lg:flex-row items-center gap-16">
+<div class="flex-1">
+<h2 class="text-3xl font-black mb-6">Seamless Integration Architecture</h2>
+<p class="text-lg text-slate-600 dark:text-slate-400 mb-8">
+                                GridVis acts as the bridge between your physical assets and enterprise management systems. From Janitza UMG hardware to high-level ERP/SCADA platforms.
+                            </p>
+<ul class="space-y-4">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary">check_circle</span>
+<div>
+<span class="font-bold block">Native Hardware Support</span>
+<span class="text-sm text-slate-500">Optimized for UMG 801, UMG 806, and ProData series.</span>
+</div>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary">check_circle</span>
+<div>
+<span class="font-bold block">Open Communication</span>
+<span class="text-sm text-slate-500">OPC UA, REST API, and MQTT support for Industry 4.0.</span>
+</div>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary">check_circle</span>
+<div>
+<span class="font-bold block">Hybrid Cloud/On-Prem</span>
+<span class="text-sm text-slate-500">Flexible deployment options to meet your IT security standards.</span>
+</div>
+</li>
+</ul>
+</div>
+<div class="flex-1 bg-white dark:bg-slate-800 p-8 rounded-3xl shadow-xl border border-slate-200 dark:border-slate-700">
+<div class="relative aspect-video flex flex-col justify-between">
+<!-- Top Layer: ERP -->
+<div class="flex justify-center">
+<div class="px-6 py-4 bg-slate-100 dark:bg-slate-700 rounded-lg border-2 border-dashed border-slate-300 dark:border-slate-500 w-64 text-center italic text-slate-500">
+                                        ERP / SCADA / BMS
+                                    </div>
+</div>
+<!-- Bridge: API -->
+<div class="flex justify-center gap-4 py-2">
+<span class="text-[10px] font-bold text-primary bg-primary/10 px-2 py-0.5 rounded">REST API</span>
+<span class="text-[10px] font-bold text-primary bg-primary/10 px-2 py-0.5 rounded">OPC UA</span>
+</div>
+<!-- Core: GridVis -->
+<div class="flex justify-center relative">
+<div class="px-8 py-6 bg-primary text-white rounded-xl shadow-2xl w-80 text-center font-black text-xl">
+                                        GridVis Software
+                                    </div>
+<div class="absolute -right-4 top-1/2 -translate-y-1/2 rotate-90 text-slate-300">
+<span class="material-symbols-outlined text-4xl">sync</span>
+</div>
+</div>
+<!-- Bottom: Hardware -->
+<div class="flex justify-around mt-8">
+<div class="flex flex-col items-center">
+<div class="size-14 bg-slate-200 dark:bg-slate-700 rounded flex items-center justify-center mb-2">
+<span class="material-symbols-outlined text-slate-400">memory</span>
+</div>
+<span class="text-xs font-bold">UMG 801</span>
+</div>
+<div class="flex flex-col items-center">
+<div class="size-14 bg-slate-200 dark:bg-slate-700 rounded flex items-center justify-center mb-2">
+<span class="material-symbols-outlined text-slate-400">memory</span>
+</div>
+<span class="text-xs font-bold">UMG 806</span>
+</div>
+<div class="flex flex-col items-center">
+<div class="size-14 bg-slate-200 dark:bg-slate-700 rounded flex items-center justify-center mb-2">
+<span class="material-symbols-outlined text-slate-400">settings_input_component</span>
+</div>
+<span class="text-xs font-bold">ProData</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Editions Comparison -->
+<section class="py-24 bg-white dark:bg-background-dark/80">
+<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-16">
+<h2 class="text-4xl font-black mb-4">Scalable to Your Needs</h2>
+<p class="text-slate-600 dark:text-slate-400">Choose the right edition for your energy management project.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Basic -->
+<div class="flex flex-col border border-slate-200 dark:border-slate-700 rounded-2xl overflow-hidden hover:border-primary transition-colors">
+<div class="p-6 bg-slate-50 dark:bg-slate-800">
+<h4 class="text-lg font-bold">Basic</h4>
+<p class="text-xs text-slate-500 uppercase font-bold tracking-widest mt-1">Starting point</p>
+</div>
+<div class="p-6 flex-1 space-y-4">
+<ul class="text-sm space-y-3">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-slate-400 text-sm">check</span> Data recording</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-slate-400 text-sm">check</span> Online-data graphs</li>
+<li class="flex items-center gap-2 text-slate-400"><span class="material-symbols-outlined text-sm">close</span> Manual reporting</li>
+</ul>
+</div>
+</div>
+<!-- Professional -->
+<div class="flex flex-col border-2 border-primary rounded-2xl overflow-hidden relative shadow-xl">
+<div class="absolute top-0 right-0 bg-primary text-white text-[10px] font-bold px-3 py-1 rounded-bl-lg uppercase tracking-tighter">Recommended</div>
+<div class="p-6 bg-primary/5 dark:bg-primary/20">
+<h4 class="text-lg font-bold">Professional</h4>
+<p class="text-xs text-primary uppercase font-bold tracking-widest mt-1">Industrial Standard</p>
+</div>
+<div class="p-6 flex-1 space-y-4">
+<ul class="text-sm space-y-3 font-medium">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-sm">check</span> Automated Reporting</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-sm">check</span> DB Connection</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-sm">check</span> Alarm Management</li>
+</ul>
+</div>
+</div>
+<!-- Enterprise -->
+<div class="flex flex-col border border-slate-200 dark:border-slate-700 rounded-2xl overflow-hidden hover:border-primary transition-colors">
+<div class="p-6 bg-slate-50 dark:bg-slate-800">
+<h4 class="text-lg font-bold">Enterprise</h4>
+<p class="text-xs text-slate-500 uppercase font-bold tracking-widest mt-1">Multi-site</p>
+</div>
+<div class="p-6 flex-1 space-y-4">
+<ul class="text-sm space-y-3">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-slate-400 text-sm">check</span> Virtual Meters</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-slate-400 text-sm">check</span> User Roles &amp; Rights</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-slate-400 text-sm">check</span> Global Dashboards</li>
+</ul>
+</div>
+</div>
+<!-- Service -->
+<div class="flex flex-col border border-slate-200 dark:border-slate-700 rounded-2xl overflow-hidden hover:border-primary transition-colors">
+<div class="p-6 bg-slate-50 dark:bg-slate-800">
+<h4 class="text-lg font-bold">Service</h4>
+<p class="text-xs text-slate-500 uppercase font-bold tracking-widest mt-1">Contractors</p>
+</div>
+<div class="p-6 flex-1 space-y-4">
+<ul class="text-sm space-y-3">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-slate-400 text-sm">check</span> Full Project Portability</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-slate-400 text-sm">check</span> Service Specialist Tools</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-slate-400 text-sm">check</span> Custom Plugins</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Industry Applications -->
+<section class="py-24 bg-primary text-white">
+<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+<div class="flex flex-col lg:flex-row gap-16 items-center">
+<div class="flex-1">
+<h2 class="text-4xl font-black mb-8 leading-tight">Optimized for High-Stakes Environments</h2>
+<div class="grid grid-cols-2 gap-8">
+<div>
+<span class="material-symbols-outlined text-4xl mb-2 opacity-50">dns</span>
+<h4 class="text-xl font-bold mb-2">Data Centers</h4>
+<p class="text-primary/70 text-sm leading-relaxed text-blue-100">Maintain 99.999% uptime with predictive power quality analysis and failure detection.</p>
+</div>
+<div>
+<span class="material-symbols-outlined text-4xl mb-2 opacity-50">factory</span>
+<h4 class="text-xl font-bold mb-2">Industry</h4>
+<p class="text-primary/70 text-sm leading-relaxed text-blue-100">Reduce energy costs by 15-20% and meet strict ISO environmental mandates.</p>
+</div>
+<div>
+<span class="material-symbols-outlined text-4xl mb-2 opacity-50">apartment</span>
+<h4 class="text-xl font-bold mb-2">Infrastructure</h4>
+<p class="text-primary/70 text-sm leading-relaxed text-blue-100">Efficient load management for modern buildings and complex transportation hubs.</p>
+</div>
+<div>
+<span class="material-symbols-outlined text-4xl mb-2 opacity-50">local_hospital</span>
+<h4 class="text-xl font-bold mb-2">Health Care</h4>
+<p class="text-primary/70 text-sm leading-relaxed text-blue-100">Critical power monitoring for sensitive medical equipment and patient safety.</p>
+</div>
+</div>
+</div>
+<div class="flex-1 w-full lg:w-auto">
+<div class="rounded-3xl overflow-hidden shadow-2xl bg-white/10 backdrop-blur-sm p-1">
+<img class="w-full h-auto rounded-2xl" data-alt="Modern data center server racks with blue accent lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBDXHxL9EEdyVCaga9J8iwxY0u3a0Q1Vm57m2wabijbYgvjhh7FFskjb9Xhaz295maQUCgwGKovr4YyiuGg1mcuXAhtag8snw47DD_-nUASgt1VxRQDvoynAt6lTEkgMeFpqUDFapyood4WY7HKwlwPlhsVi4n5egvm7qDWudmXOnZwnhPN6u7AsbEhbqFHUOonYMsFbpnAe6tgsw8b6BlgJdye7yJSq0aNIO-l514qgsJKrFG68WOzAL2B3LHJIsZfRegyQx4Tv6yr"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="py-24">
+<div class="mx-auto max-w-4xl px-4 text-center">
+<h2 class="text-4xl font-black mb-6">Ready to Optimize Your Power Grid?</h2>
+<p class="text-xl text-slate-600 dark:text-slate-400 mb-10">
+                        Join thousands of companies worldwide using GridVis to gain full energy transparency.
+                    </p>
+<div class="flex flex-col sm:flex-row justify-center gap-4">
+<button class="bg-primary text-white px-10 py-5 rounded-xl font-bold text-lg hover:scale-105 transition-all shadow-2xl shadow-primary/40">
+                            Book Your Free Demo
+                        </button>
+<button class="bg-slate-100 dark:bg-slate-800 text-slate-900 dark:text-white px-10 py-5 rounded-xl font-bold text-lg hover:bg-slate-200 dark:hover:bg-slate-700 transition-all">
+                            Technical Documentation
+                        </button>
+</div>
+<p class="mt-8 text-sm text-slate-500">Available as Desktop, Web, and Enterprise Edition.</p>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-slate-900 text-white py-12">
+<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+<div class="flex flex-col md:flex-row justify-between items-center gap-8">
+<div class="flex items-center gap-2">
+<div class="size-6 bg-white rounded flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-lg">leaderboard</span>
+</div>
+<span class="text-xl font-black uppercase tracking-tighter">Janitza</span>
+</div>
+<div class="flex gap-8 text-sm text-slate-400 font-medium">
+<a class="hover:text-white transition-colors" href="#">Privacy Policy</a>
+<a class="hover:text-white transition-colors" href="#">Terms of Service</a>
+<a class="hover:text-white transition-colors" href="#">Imprint</a>
+<a class="hover:text-white transition-colors" href="#">Contact</a>
+</div>
+<div class="text-sm text-slate-500">
+                        © 2024 Janitza electronics GmbH. All rights reserved.
+                    </div>
+</div>
+</div>
+</footer>
+</div>
+</body></html>

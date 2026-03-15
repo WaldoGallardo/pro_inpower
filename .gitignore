@@ -1,0 +1,9 @@
+# Ignore zip files
+*.zip
+
+# Ignore pdf files
+*.pdf
+
+# Ignore specific folders
+/JanitzaPartner Material/
+/stitch (1)/
