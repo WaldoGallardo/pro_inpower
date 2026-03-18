@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Inpower Service &amp; Support Portal</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#003366",
+                        "background-light": "#f5f7f8",
+                        "background-dark": "#0f1923",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 min-h-screen flex flex-col">
+<div class="layout-container flex h-full grow flex-col">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-primary/20 px-10 py-3 bg-white dark:bg-slate-900 sticky top-0 z-50">
+<div class="flex items-center gap-4 text-primary dark:text-blue-300">
+<div class="size-6 flex items-center justify-center">
+<span class="material-symbols-outlined" style="font-size: 24px;">bolt</span>
+</div>
+<h2 class="text-lg font-bold leading-tight tracking-[-0.015em]">Inpower Portal</h2>
+</div>
+<div class="flex flex-1 justify-end gap-8 hidden md:flex">
+<nav class="flex items-center gap-9">
+<a class="text-slate-700 dark:text-slate-300 hover:text-primary dark:hover:text-primary text-sm font-medium leading-normal transition-colors" href="#">Dashboard</a>
+<a class="text-slate-700 dark:text-slate-300 hover:text-primary dark:hover:text-primary text-sm font-medium leading-normal transition-colors" href="#">Tickets</a>
+<a class="text-slate-700 dark:text-slate-300 hover:text-primary dark:hover:text-primary text-sm font-medium leading-normal transition-colors" href="#">Documentation</a>
+<a class="text-slate-700 dark:text-slate-300 hover:text-primary dark:hover:text-primary text-sm font-medium leading-normal transition-colors" href="#">Academy</a>
+<a class="text-primary dark:text-primary text-sm font-bold border-b-2 border-primary pb-1 leading-normal" href="#">Support</a>
+</nav>
+</div>
+<div class="md:hidden flex items-center">
+<button class="text-slate-700 dark:text-slate-300 p-2">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</header>
+<main class="flex-1 max-w-[1200px] mx-auto w-full px-4 sm:px-6 lg:px-8 py-8 flex flex-col gap-12">
+<section class="@container">
+<div class="flex min-h-[400px] flex-col gap-6 bg-primary dark:bg-primary/80 rounded-xl items-center justify-center p-8 text-center relative overflow-hidden shadow-lg" data-alt="Abstract blue technical pattern background">
+<!-- Decorative background elements -->
+<div class="absolute inset-0 opacity-20" style="background-image: radial-gradient(circle at 20% 50%, rgba(255,255,255,0.3) 0%, transparent 50%), radial-gradient(circle at 80% 80%, rgba(255,255,255,0.2) 0%, transparent 40%);"></div>
+<div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMiIgY3k9IjIiIHI9IjIiIGZpbGw9IiNmZmYiIGZpbGwtb3BhY2l0eT0iMC4wNSIvPjwvc3ZnPg==')] opacity-30 mix-blend-overlay"></div>
+<div class="relative z-10 flex flex-col gap-3 max-w-3xl mx-auto">
+<h1 class="text-white text-4xl sm:text-5xl font-black leading-tight tracking-[-0.033em]">
+                            Service &amp; Support Center
+                        </h1>
+<p class="text-blue-100 text-lg sm:text-xl font-normal leading-relaxed">
+                            Find answers, manage tickets, and access technical resources for your Janitza solutions.
+                        </p>
+</div>
+<div class="relative z-10 w-full max-w-2xl mt-4">
+<div class="flex w-full items-stretch rounded-lg shadow-md bg-white dark:bg-slate-800 overflow-hidden focus-within:ring-2 focus-within:ring-blue-400 transition-all">
+<div class="flex items-center justify-center pl-4 text-slate-400 dark:text-slate-500">
+<span class="material-symbols-outlined">search</span>
+</div>
+<input class="w-full bg-transparent border-none text-slate-900 dark:text-slate-100 focus:outline-none focus:ring-0 px-4 py-4 text-base placeholder:text-slate-400 dark:placeholder:text-slate-500" placeholder="Search Knowledge Base, Manuals, or Error Codes..." type="text"/>
+<button class="bg-primary hover:bg-blue-800 text-white px-8 font-bold text-base transition-colors whitespace-nowrap">
+                                Search
+                            </button>
+</div>
+</div>
+</div>
+</section>
+<section class="flex flex-col gap-6">
+<div class="flex flex-col gap-2">
+<h2 class="text-2xl sm:text-3xl font-bold leading-tight">Quick Support Options</h2>
+<p class="text-slate-600 dark:text-slate-400 text-base">Select an option to get the help you need quickly.</p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+<a class="flex flex-col gap-4 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 p-6 hover:shadow-md hover:border-primary/50 transition-all group" href="#">
+<div class="size-12 rounded-lg bg-blue-50 dark:bg-blue-900/30 flex items-center justify-center text-primary dark:text-blue-400 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-2xl">confirmation_number</span>
+</div>
+<div class="flex flex-col gap-1">
+<h3 class="text-lg font-bold">Submit a Ticket</h3>
+<p class="text-slate-500 dark:text-slate-400 text-sm">Open a new technical support request</p>
+</div>
+</a>
+<a class="flex flex-col gap-4 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 p-6 hover:shadow-md hover:border-primary/50 transition-all group" href="#">
+<div class="size-12 rounded-lg bg-blue-50 dark:bg-blue-900/30 flex items-center justify-center text-primary dark:text-blue-400 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-2xl">menu_book</span>
+</div>
+<div class="flex flex-col gap-1">
+<h3 class="text-lg font-bold">Technical Docs</h3>
+<p class="text-slate-500 dark:text-slate-400 text-sm">Manuals, wiring diagrams, and specs</p>
+</div>
+</a>
+<a class="flex flex-col gap-4 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 p-6 hover:shadow-md hover:border-primary/50 transition-all group" href="#">
+<div class="size-12 rounded-lg bg-blue-50 dark:bg-blue-900/30 flex items-center justify-center text-primary dark:text-blue-400 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-2xl">school</span>
+</div>
+<div class="flex flex-col gap-1">
+<h3 class="text-lg font-bold">Training Academy</h3>
+<p class="text-slate-500 dark:text-slate-400 text-sm">Online courses and certifications</p>
+</div>
+</a>
+<a class="flex flex-col gap-4 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 p-6 hover:shadow-md hover:border-primary/50 transition-all group" href="#">
+<div class="size-12 rounded-lg bg-blue-50 dark:bg-blue-900/30 flex items-center justify-center text-primary dark:text-blue-400 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-2xl">update</span>
+</div>
+<div class="flex flex-col gap-1">
+<h3 class="text-lg font-bold">Software Updates</h3>
+<p class="text-slate-500 dark:text-slate-400 text-sm">GridVis and device firmware downloads</p>
+</div>
+</a>
+</div>
+</section>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+<section class="lg:col-span-2 flex flex-col gap-6">
+<div class="flex items-center justify-between">
+<h2 class="text-2xl font-bold leading-tight">My Support Tickets</h2>
+<a class="text-primary dark:text-blue-400 text-sm font-semibold hover:underline flex items-center gap-1" href="#">
+                            View All <span class="material-symbols-outlined" style="font-size: 16px;">arrow_forward</span>
+</a>
+</div>
+<div class="overflow-x-auto rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 shadow-sm">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-slate-50 dark:bg-slate-900/50 border-b border-slate-200 dark:border-slate-700">
+<th class="px-6 py-4 text-sm font-semibold text-slate-700 dark:text-slate-300">Ticket ID</th>
+<th class="px-6 py-4 text-sm font-semibold text-slate-700 dark:text-slate-300">Subject</th>
+<th class="px-6 py-4 text-sm font-semibold text-slate-700 dark:text-slate-300 hidden sm:table-cell">Product</th>
+<th class="px-6 py-4 text-sm font-semibold text-slate-700 dark:text-slate-300">Status</th>
+<th class="px-6 py-4 text-sm font-semibold text-slate-700 dark:text-slate-300 hidden md:table-cell">Last Updated</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-slate-100 dark:divide-slate-700/50">
+<tr class="hover:bg-slate-50 dark:hover:bg-slate-700/20 transition-colors">
+<td class="px-6 py-4 text-sm font-medium text-primary dark:text-blue-400">#INP-4092</td>
+<td class="px-6 py-4 text-sm text-slate-900 dark:text-slate-100 font-medium">UMG 801 Modbus Connection Issue</td>
+<td class="px-6 py-4 text-sm text-slate-600 dark:text-slate-400 hidden sm:table-cell">UMG 801</td>
+<td class="px-6 py-4 text-sm">
+<span class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-blue-100 text-blue-800 dark:bg-blue-900/30 dark:text-blue-300 border border-blue-200 dark:border-blue-800">
+                                            In Progress
+                                        </span>
+</td>
+<td class="px-6 py-4 text-sm text-slate-500 dark:text-slate-400 hidden md:table-cell">Oct 24, 2023</td>
+</tr>
+<tr class="hover:bg-slate-50 dark:hover:bg-slate-700/20 transition-colors">
+<td class="px-6 py-4 text-sm font-medium text-primary dark:text-blue-400">#INP-4085</td>
+<td class="px-6 py-4 text-sm text-slate-900 dark:text-slate-100 font-medium">GridVis License Activation</td>
+<td class="px-6 py-4 text-sm text-slate-600 dark:text-slate-400 hidden sm:table-cell">GridVis Enterprise</td>
+<td class="px-6 py-4 text-sm">
+<span class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-green-100 text-green-800 dark:bg-green-900/30 dark:text-green-300 border border-green-200 dark:border-green-800">
+                                            Resolved
+                                        </span>
+</td>
+<td class="px-6 py-4 text-sm text-slate-500 dark:text-slate-400 hidden md:table-cell">Oct 20, 2023</td>
+</tr>
+<tr class="hover:bg-slate-50 dark:hover:bg-slate-700/20 transition-colors">
+<td class="px-6 py-4 text-sm font-medium text-primary dark:text-blue-400">#INP-4011</td>
+<td class="px-6 py-4 text-sm text-slate-900 dark:text-slate-100 font-medium">Current Transformer Calibration</td>
+<td class="px-6 py-4 text-sm text-slate-600 dark:text-slate-400 hidden sm:table-cell">CT-400</td>
+<td class="px-6 py-4 text-sm">
+<span class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-amber-100 text-amber-800 dark:bg-amber-900/30 dark:text-amber-300 border border-amber-200 dark:border-amber-800">
+                                            Pending
+                                        </span>
+</td>
+<td class="px-6 py-4 text-sm text-slate-500 dark:text-slate-400 hidden md:table-cell">Oct 15, 2023</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<div class="flex flex-col gap-8">
+<section class="flex flex-col gap-4">
+<h2 class="text-xl font-bold leading-tight">Frequently Asked Questions</h2>
+<div class="flex flex-col gap-3">
+<a class="block p-4 rounded-lg bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 hover:border-primary/50 transition-colors" href="#">
+<h4 class="font-medium text-primary dark:text-blue-400 mb-1">How to configure Modbus TCP on UMG 801?</h4>
+<p class="text-sm text-slate-600 dark:text-slate-400 line-clamp-2">Step-by-step guide on setting up communication parameters via device interface or GridVis.</p>
+</a>
+<a class="block p-4 rounded-lg bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 hover:border-primary/50 transition-colors" href="#">
+<h4 class="font-medium text-primary dark:text-blue-400 mb-1">Updating GridVis database</h4>
+<p class="text-sm text-slate-600 dark:text-slate-400 line-clamp-2">Best practices for backing up and migrating your existing measurement data to a newer DB version.</p>
+</a>
+<a class="block p-4 rounded-lg bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 hover:border-primary/50 transition-colors" href="#">
+<h4 class="font-medium text-primary dark:text-blue-400 mb-1">Firmware upgrade procedure</h4>
+<p class="text-sm text-slate-600 dark:text-slate-400 line-clamp-2">Instructions for safely updating device firmware using the DeviceScan tool.</p>
+</a>
+</div>
+</section>
+<section class="rounded-xl bg-slate-100 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 p-6 flex flex-col gap-5">
+<div class="flex items-center gap-3 border-b border-slate-200 dark:border-slate-700 pb-4">
+<div class="size-10 rounded-full bg-primary/10 flex items-center justify-center text-primary dark:text-blue-400">
+<span class="material-symbols-outlined">support_agent</span>
+</div>
+<h3 class="text-lg font-bold">Contact Support</h3>
+</div>
+<div class="flex flex-col gap-4">
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-slate-400 mt-0.5">call</span>
+<div>
+<p class="text-sm font-medium text-slate-900 dark:text-slate-100">+1 (800) 555-0199</p>
+<p class="text-xs text-slate-500">Toll-free Technical Support</p>
+</div>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-slate-400 mt-0.5">mail</span>
+<div>
+<p class="text-sm font-medium text-primary dark:text-blue-400 hover:underline cursor-pointer">support@inpower.com</p>
+<p class="text-xs text-slate-500">Average response: 4 hours</p>
+</div>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-slate-400 mt-0.5">schedule</span>
+<div>
+<p class="text-sm font-medium text-slate-900 dark:text-slate-100">Operating Hours</p>
+<p class="text-xs text-slate-500">Mon-Fri: 8:00 AM - 6:00 PM EST<br/>Emergency weekend support available</p>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+</main>
+<footer class="bg-white dark:bg-slate-900 border-t border-slate-200 dark:border-slate-800 mt-auto py-6">
+<div class="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-sm text-slate-500 dark:text-slate-400">
+<p>© 2023 Inpower Systems. A Janitza Solution Partner.</p>
+<div class="flex gap-4">
+<a class="hover:text-primary dark:hover:text-blue-400 transition-colors" href="#">Privacy Policy</a>
+<a class="hover:text-primary dark:hover:text-blue-400 transition-colors" href="#">Terms of Service</a>
+</div>
+</div>
+</footer>
+</div>
+</body></html>

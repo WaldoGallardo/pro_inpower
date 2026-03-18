@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Inpower Academy | Technical Training</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#003366",
+                        "background-light": "#f5f7f8",
+                        "background-dark": "#0f1923",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+</head>
+<body class="font-display bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 min-h-screen antialiased">
+<div class="relative flex min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<div class="flex flex-1 justify-center py-5 px-4 md:px-8 lg:px-40">
+<div class="layout-content-container flex flex-col max-w-[1200px] flex-1 w-full">
+<!-- Header -->
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-slate-200 dark:border-slate-800 px-4 md:px-10 py-4 mb-6">
+<div class="flex items-center gap-4 text-primary dark:text-slate-100">
+<div class="size-6 flex items-center justify-center">
+<span class="material-symbols-outlined text-2xl">bolt</span>
+</div>
+<h2 class="text-xl font-bold leading-tight tracking-[-0.015em]">Inpower Academy</h2>
+</div>
+<div class="flex flex-1 justify-end gap-8">
+<nav class="hidden md:flex items-center gap-9">
+<a class="text-slate-700 dark:text-slate-300 hover:text-primary dark:hover:text-white text-sm font-medium transition-colors" href="#">Webinars</a>
+<a class="text-slate-700 dark:text-slate-300 hover:text-primary dark:hover:text-white text-sm font-medium transition-colors" href="#">Certifications</a>
+<a class="text-slate-700 dark:text-slate-300 hover:text-primary dark:hover:text-white text-sm font-medium transition-colors" href="#">Tutorials</a>
+<a class="text-slate-700 dark:text-slate-300 hover:text-primary dark:hover:text-white text-sm font-medium transition-colors" href="#">Learning Paths</a>
+</nav>
+<button class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-6 bg-primary text-white text-sm font-bold shadow-sm hover:bg-primary/90 transition-colors">
+<span>Sign In</span>
+</button>
+</div>
+</header>
+<!-- Hero Section -->
+<div class="@container w-full mb-12">
+<div class="flex min-h-[500px] flex-col gap-6 bg-cover bg-center bg-no-repeat rounded-xl items-start justify-end px-6 pb-12 md:px-12 relative overflow-hidden" data-alt="Industrial facility monitoring equipment" style='background-image: linear-gradient(rgba(15, 25, 35, 0.4) 0%, rgba(15, 25, 35, 0.8) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuDZNOqbigVgyOYBySvUBFUnPx2-CRxWF8qtjZVpXx2lGaJ53bw_Qn5FZ0_kcJjlMzlhfIvnJj6jeSs7P1C9KyuC_Yyqx5DRa_DDUHpZy6vhq7deKYYs_7_T9Bf5JG9Grjks6SZca0FPlsmfyyZnyRfF8Z0KGYsEfGeZHQtN2LuC2ttxLd0HdpHYZ55i3KzFvTJ98-yFJy0QPgoDzrw95vjzc5ORPAIriR0Id8NeCx89wbDtPwOJnUSgthqVKIBG2BFBETABq8tV74Oy");'>
+<div class="flex flex-col gap-4 text-left max-w-2xl relative z-10">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/20 backdrop-blur-sm border border-primary/30 w-fit mb-2">
+<span class="material-symbols-outlined text-white text-sm">verified</span>
+<span class="text-white text-xs font-bold uppercase tracking-wider">Janitza Solution Partner</span>
+</div>
+<h1 class="text-white text-4xl md:text-5xl lg:text-6xl font-black leading-tight tracking-tight">
+                                    Master Power Quality &amp; Energy Management
+                                </h1>
+<p class="text-slate-200 text-base md:text-lg font-normal leading-relaxed max-w-xl">
+                                    Advance your technical expertise with Inpower's professional certifications and expert-led training programs designed for industrial professionals.
+                                </p>
+</div>
+<div class="flex-wrap gap-4 flex mt-4 relative z-10">
+<button class="flex cursor-pointer items-center justify-center rounded-lg h-12 px-6 bg-primary text-white text-base font-bold shadow-lg hover:bg-primary/90 transition-colors">
+<span>Explore Certifications</span>
+</button>
+<button class="flex cursor-pointer items-center justify-center rounded-lg h-12 px-6 bg-white/10 backdrop-blur-md border border-white/20 text-white text-base font-bold hover:bg-white/20 transition-colors">
+<span>View Webinars</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Learning Formats -->
+<div class="mb-16">
+<div class="flex items-center justify-between px-4 mb-8">
+<h2 class="text-2xl md:text-3xl font-bold tracking-tight text-slate-900 dark:text-white">Learning Formats</h2>
+<a class="text-primary dark:text-primary/80 font-medium hover:underline flex items-center gap-1" href="#">
+                                View all <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 px-4">
+<!-- Format Card 1 -->
+<div class="flex flex-col gap-4 group cursor-pointer bg-white dark:bg-slate-800 rounded-xl p-4 shadow-sm border border-slate-200 dark:border-slate-700 hover:shadow-md transition-shadow">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg overflow-hidden relative" data-alt="People watching a technical presentation" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDWybbX0J3-vAXtuAqbJNcq49shagIbQf0hSosTyyRcOs5MW2goJD2CT8xU33E7xSMrqPdQRmsB_eNvmNjieoRrHhRbCFOUuIBu4Jt26oQtoc8_CixGBrCC7-tFkDvYXKzpBd_u6Y5ww4uS8j117ILUt_PTMArqYzz8cPM2z8q76us4k4qlBMC8W30EnLIJp4Up5FB0My8CoOXUJqRVTVCiE8trqMd0EA0aTgg43L-ZOS3TFD9V0P0SgYpjImbBKY5N982IRLPrz_M2");'>
+<div class="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors"></div>
+<div class="absolute top-3 left-3 bg-white/90 dark:bg-slate-800/90 backdrop-blur p-1.5 rounded-md text-primary">
+<span class="material-symbols-outlined block">record_voice_over</span>
+</div>
+</div>
+<div>
+<h3 class="text-lg font-bold text-slate-900 dark:text-white mb-1 group-hover:text-primary dark:group-hover:text-primary/80 transition-colors">Webinars</h3>
+<p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">Access upcoming live sessions and on-demand webinars covering the latest in energy analytics.</p>
+</div>
+</div>
+<!-- Format Card 2 -->
+<div class="flex flex-col gap-4 group cursor-pointer bg-white dark:bg-slate-800 rounded-xl p-4 shadow-sm border border-slate-200 dark:border-slate-700 hover:shadow-md transition-shadow">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg overflow-hidden relative" data-alt="Technical certification document and pen" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCjRSI2OcGd8MPm-xs4bkI1bnq0nQ5NdXDhCs9eNuzFXbE4ORryvGc4OaZq65_IOp_C1QbpBM_jm0GOPdDX9KRnNwLnW-07QysaxU9B_18I9oIHx__mHwcVbXnB_WLpr4-DU4ek3fAiaESePYzdv29-ZLjv5wOh0Ncpp3SkEHdnECDK_mjGBX7P63KmNyv7i-kXXxW-_9kZ3QDU1VSF5kjug100AUUuZpV6h6Ux-_1VBSmFIC5p2Yv0uF2FI6F7GXN3qWQyjuaivyED");'>
+<div class="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors"></div>
+<div class="absolute top-3 left-3 bg-white/90 dark:bg-slate-800/90 backdrop-blur p-1.5 rounded-md text-primary">
+<span class="material-symbols-outlined block">workspace_premium</span>
+</div>
+</div>
+<div>
+<h3 class="text-lg font-bold text-slate-900 dark:text-white mb-1 group-hover:text-primary dark:group-hover:text-primary/80 transition-colors">Certification Programs</h3>
+<p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">Get officially certified in ISO 50001 implementation and Advanced Power Quality Analysis.</p>
+</div>
+</div>
+<!-- Format Card 3 -->
+<div class="flex flex-col gap-4 group cursor-pointer bg-white dark:bg-slate-800 rounded-xl p-4 shadow-sm border border-slate-200 dark:border-slate-700 hover:shadow-md transition-shadow">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg overflow-hidden relative" data-alt="Screen showing data analysis graphs" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCu660KwOjpL0dEpslXnbSIq19naX-oQUi4IqHyyd-bainsX2gnpdLRijWgOVbejUzfiX8iqymEF66hEyIicltmAYMJgB0x4hx4mVzFRzqYp1qzy-UcB5DTM4EEIaXi-SPfTmrSxHR2Zj6RiajObbS0LQ_-9mBBzoBpfXZ68xZCmBteZ1i9MBp_YkFLEkA4u1hcazKhKp9eNamgXgFRLXItPPSkDzASZKmc6YSkaLN7SazGOBgXlvB-CCWlrK02K8epzfYKZ8BWbq5b");'>
+<div class="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors"></div>
+<div class="absolute top-3 left-3 bg-white/90 dark:bg-slate-800/90 backdrop-blur p-1.5 rounded-md text-primary">
+<span class="material-symbols-outlined block">play_circle</span>
+</div>
+</div>
+<div>
+<h3 class="text-lg font-bold text-slate-900 dark:text-white mb-1 group-hover:text-primary dark:group-hover:text-primary/80 transition-colors">Video Tutorials</h3>
+<p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">Step-by-step technical guides for hardware setups, software configuration, and troubleshooting.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Upcoming Sessions -->
+<div class="mb-16 bg-slate-100 dark:bg-slate-800/50 rounded-2xl p-6 md:p-8 border border-slate-200 dark:border-slate-700">
+<div class="flex items-center gap-3 mb-6">
+<span class="material-symbols-outlined text-red-500 animate-pulse">sensors</span>
+<h2 class="text-2xl font-bold tracking-tight text-slate-900 dark:text-white">Upcoming Live Training</h2>
+</div>
+<div class="flex flex-col gap-4">
+<!-- Session 1 -->
+<div class="flex flex-col md:flex-row items-start md:items-center justify-between p-4 bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 shadow-sm gap-4">
+<div class="flex flex-col md:flex-row gap-4 md:gap-6 items-start md:items-center">
+<div class="flex flex-col items-center justify-center bg-primary/10 dark:bg-primary/20 text-primary dark:text-primary/80 rounded-lg p-3 min-w-[80px]">
+<span class="text-xs font-bold uppercase">OCT</span>
+<span class="text-2xl font-black">24</span>
+</div>
+<div>
+<div class="flex items-center gap-2 mb-1">
+<span class="px-2 py-0.5 rounded text-xs font-medium bg-blue-100 text-blue-800 dark:bg-blue-900/30 dark:text-blue-300">Webinar</span>
+<span class="text-xs text-slate-500 flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">schedule</span> 10:00 AM EST</span>
+</div>
+<h4 class="text-lg font-bold text-slate-900 dark:text-white">Introduction to GridVis 8 Configuration</h4>
+<p class="text-sm text-slate-600 dark:text-slate-400">Learn the fundamentals of setting up your first measurement topology.</p>
+</div>
+</div>
+<button class="w-full md:w-auto px-5 py-2.5 bg-white dark:bg-slate-700 border border-slate-300 dark:border-slate-600 text-slate-700 dark:text-slate-200 rounded-lg text-sm font-semibold hover:bg-slate-50 dark:hover:bg-slate-600 transition-colors">
+                                    Register
+                                </button>
+</div>
+<!-- Session 2 -->
+<div class="flex flex-col md:flex-row items-start md:items-center justify-between p-4 bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 shadow-sm gap-4">
+<div class="flex flex-col md:flex-row gap-4 md:gap-6 items-start md:items-center">
+<div class="flex flex-col items-center justify-center bg-primary/10 dark:bg-primary/20 text-primary dark:text-primary/80 rounded-lg p-3 min-w-[80px]">
+<span class="text-xs font-bold uppercase">NOV</span>
+<span class="text-2xl font-black">05</span>
+</div>
+<div>
+<div class="flex items-center gap-2 mb-1">
+<span class="px-2 py-0.5 rounded text-xs font-medium bg-purple-100 text-purple-800 dark:bg-purple-900/30 dark:text-purple-300">Masterclass</span>
+<span class="text-xs text-slate-500 flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">schedule</span> 1:00 PM EST</span>
+</div>
+<h4 class="text-lg font-bold text-slate-900 dark:text-white">Advanced Harmonics Mitigation</h4>
+<p class="text-sm text-slate-600 dark:text-slate-400">Deep dive into identifying and resolving complex power quality issues.</p>
+</div>
+</div>
+<button class="w-full md:w-auto px-5 py-2.5 bg-primary text-white rounded-lg text-sm font-semibold hover:bg-primary/90 transition-colors shadow-sm">
+                                    Register
+                                </button>
+</div>
+</div>
+</div>
+<!-- Learning Paths -->
+<div class="mb-16">
+<h2 class="text-2xl md:text-3xl font-bold tracking-tight text-slate-900 dark:text-white px-4 mb-8">Learning Paths by Role</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 px-4">
+<!-- Role 1 -->
+<div class="flex flex-col border border-slate-200 dark:border-slate-700 rounded-xl overflow-hidden bg-white dark:bg-slate-800">
+<div class="p-6 border-b border-slate-100 dark:border-slate-700">
+<div class="w-12 h-12 rounded-lg bg-blue-50 dark:bg-blue-900/20 text-blue-600 dark:text-blue-400 flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-2xl">domain</span>
+</div>
+<h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">Facility Manager</h3>
+<p class="text-sm text-slate-600 dark:text-slate-400 h-10">Focus on ISO 50001 compliance, energy cost reduction, and high-level reporting.</p>
+</div>
+<div class="p-6 flex-1 bg-slate-50 dark:bg-slate-800/50">
+<ul class="space-y-3 mb-6">
+<li class="flex items-start gap-2 text-sm text-slate-700 dark:text-slate-300">
+<span class="material-symbols-outlined text-[18px] text-green-500 shrink-0">check_circle</span>
+<span>Energy Management Systems Basics</span>
+</li>
+<li class="flex items-start gap-2 text-sm text-slate-700 dark:text-slate-300">
+<span class="material-symbols-outlined text-[18px] text-green-500 shrink-0">check_circle</span>
+<span>GridVis Dashboards &amp; Reporting</span>
+</li>
+<li class="flex items-start gap-2 text-sm text-slate-700 dark:text-slate-300">
+<span class="material-symbols-outlined text-[18px] text-slate-300 dark:text-slate-600 shrink-0">radio_button_unchecked</span>
+<span>ISO 50001 Certification Prep</span>
+</li>
+</ul>
+<button class="w-full py-2 border border-primary text-primary dark:text-white dark:border-primary dark:bg-primary/20 rounded-lg text-sm font-semibold hover:bg-primary hover:text-white transition-colors">
+                                        Start Path
+                                    </button>
+</div>
+</div>
+<!-- Role 2 -->
+<div class="flex flex-col border-2 border-primary rounded-xl overflow-hidden bg-white dark:bg-slate-800 relative shadow-md">
+<div class="absolute top-0 right-0 bg-primary text-white text-[10px] font-bold px-3 py-1 rounded-bl-lg uppercase tracking-wider">
+                                    Most Popular
+                                </div>
+<div class="p-6 border-b border-slate-100 dark:border-slate-700">
+<div class="w-12 h-12 rounded-lg bg-primary/10 text-primary flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-2xl">engineering</span>
+</div>
+<h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">Energy Auditor</h3>
+<p class="text-sm text-slate-600 dark:text-slate-400 h-10">Master data analysis, measurement concepts, and identifying efficiency potentials.</p>
+</div>
+<div class="p-6 flex-1 bg-slate-50 dark:bg-slate-800/50">
+<ul class="space-y-3 mb-6">
+<li class="flex items-start gap-2 text-sm text-slate-700 dark:text-slate-300">
+<span class="material-symbols-outlined text-[18px] text-green-500 shrink-0">check_circle</span>
+<span>Measurement Concept Design</span>
+</li>
+<li class="flex items-start gap-2 text-sm text-slate-700 dark:text-slate-300">
+<span class="material-symbols-outlined text-[18px] text-green-500 shrink-0">check_circle</span>
+<span>Advanced GridVis Analytics</span>
+</li>
+<li class="flex items-start gap-2 text-sm text-slate-700 dark:text-slate-300">
+<span class="material-symbols-outlined text-[18px] text-slate-300 dark:text-slate-600 shrink-0">radio_button_unchecked</span>
+<span>Certified Energy Auditor Exam</span>
+</li>
+</ul>
+<button class="w-full py-2 bg-primary text-white rounded-lg text-sm font-semibold hover:bg-primary/90 transition-colors">
+                                        Start Path
+                                    </button>
+</div>
+</div>
+<!-- Role 3 -->
+<div class="flex flex-col border border-slate-200 dark:border-slate-700 rounded-xl overflow-hidden bg-white dark:bg-slate-800">
+<div class="p-6 border-b border-slate-100 dark:border-slate-700">
+<div class="w-12 h-12 rounded-lg bg-orange-50 dark:bg-orange-900/20 text-orange-600 dark:text-orange-400 flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-2xl">build</span>
+</div>
+<h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">Maintenance Tech</h3>
+<p class="text-sm text-slate-600 dark:text-slate-400 h-10">Learn hardware installation, troubleshooting, and power quality fundamentals.</p>
+</div>
+<div class="p-6 flex-1 bg-slate-50 dark:bg-slate-800/50">
+<ul class="space-y-3 mb-6">
+<li class="flex items-start gap-2 text-sm text-slate-700 dark:text-slate-300">
+<span class="material-symbols-outlined text-[18px] text-green-500 shrink-0">check_circle</span>
+<span>Janitza Hardware Installation</span>
+</li>
+<li class="flex items-start gap-2 text-sm text-slate-700 dark:text-slate-300">
+<span class="material-symbols-outlined text-[18px] text-slate-300 dark:text-slate-600 shrink-0">radio_button_unchecked</span>
+<span>Communication Protocols (Modbus)</span>
+</li>
+<li class="flex items-start gap-2 text-sm text-slate-700 dark:text-slate-300">
+<span class="material-symbols-outlined text-[18px] text-slate-300 dark:text-slate-600 shrink-0">radio_button_unchecked</span>
+<span>Power Quality Diagnostics</span>
+</li>
+</ul>
+<button class="w-full py-2 border border-primary text-primary dark:text-white dark:border-primary dark:bg-primary/20 rounded-lg text-sm font-semibold hover:bg-primary hover:text-white transition-colors">
+                                        Start Path
+                                    </button>
+</div>
+</div>
+</div>
+</div>
+<!-- CTA Section -->
+<div class="mb-12 rounded-2xl bg-slate-900 overflow-hidden relative" data-alt="Dark abstract background pattern">
+<div class="absolute inset-0 opacity-10" style="background-image: radial-gradient(#ffffff 1px, transparent 1px); background-size: 20px 20px;"></div>
+<div class="px-6 py-12 md:py-16 md:px-12 relative z-10 flex flex-col md:flex-row items-center justify-between gap-8">
+<div class="max-w-xl text-center md:text-left">
+<h2 class="text-3xl font-black text-white mb-4">Need Corporate Training?</h2>
+<p class="text-slate-300 text-lg">We offer customized on-site and virtual training packages for technical teams of 5 or more.</p>
+</div>
+<div class="flex-shrink-0">
+<button class="px-8 py-4 bg-white text-slate-900 rounded-lg font-bold text-lg hover:bg-slate-100 transition-colors shadow-lg">
+                                    Contact Sales
+                                </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body></html>

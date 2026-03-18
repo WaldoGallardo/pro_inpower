@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Inpower - Quote Request Step 2</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              colors: {
+                "primary": "#003366",
+                "background-light": "#f5f7f8",
+                "background-dark": "#0f1923",
+              },
+              fontFamily: {
+                "display": ["Inter"]
+              },
+              borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+            },
+          },
+        }
+      </script>
+<style>
+        body { font-family: 'Inter', sans-serif; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100">
+<div class="relative flex min-h-screen w-full flex-col overflow-x-hidden">
+<!-- Header / TopNavBar -->
+<header class="flex items-center justify-between border-b border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 px-6 py-4 lg:px-20">
+<div class="flex items-center gap-4">
+<div class="text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-4xl">factory</span>
+</div>
+<h2 class="text-xl font-bold tracking-tight">Inpower</h2>
+</div>
+<div class="flex items-center gap-8">
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#">Solutions</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#">Products</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#">Support</a>
+</nav>
+<div class="h-10 w-10 rounded-full bg-primary/10 border border-primary/20 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary">person</span>
+</div>
+</div>
+</header>
+<!-- Main Content -->
+<main class="flex-1 px-4 py-8 lg:px-20">
+<div class="max-w-6xl mx-auto">
+<!-- Breadcrumb & Title -->
+<div class="mb-8">
+<nav class="flex items-center gap-2 text-sm mb-4">
+<a class="text-primary hover:underline" href="#">Quote Request</a>
+<span class="material-symbols-outlined text-sm text-slate-400">chevron_right</span>
+<span class="text-slate-500">Technical &amp; Contact Details</span>
+</nav>
+<h1 class="text-3xl font-bold">Request a Technical Quote</h1>
+<div class="mt-2 flex items-center gap-4">
+<div class="flex-1 h-2 bg-slate-200 dark:bg-slate-800 rounded-full overflow-hidden">
+<div class="h-full bg-primary w-2/3"></div>
+</div>
+<span class="text-sm font-medium text-primary">Step 2 of 3</span>
+</div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+<!-- Left Column: Form -->
+<div class="lg:col-span-2 space-y-8">
+<!-- Technical Requirements Section -->
+<section class="bg-white dark:bg-slate-900 p-6 rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm">
+<div class="flex items-center gap-2 mb-6 text-primary">
+<span class="material-symbols-outlined">settings_input_component</span>
+<h3 class="text-lg font-bold">Technical Requirements</h3>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="flex flex-col gap-2">
+<label class="text-sm font-semibold">Industry</label>
+<select class="form-select w-full rounded-lg border-slate-300 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 focus:border-primary focus:ring-primary">
+<option value="">Select your industry</option>
+<option value="manufacturing">Manufacturing</option>
+<option value="energy">Energy &amp; Utilities</option>
+<option value="mining">Mining</option>
+<option value="data_centers">Data Centers</option>
+<option value="other">Other</option>
+</select>
+</div>
+<div class="flex flex-col gap-2">
+<label class="text-sm font-semibold">Approximate Monitoring Points</label>
+<input class="form-input w-full rounded-lg border-slate-300 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 focus:border-primary focus:ring-primary" placeholder="e.g. 50" type="number"/>
+</div>
+<div class="md:col-span-2 flex flex-col gap-4 py-2">
+<label class="text-sm font-semibold">Need for Software Integration (GridVis®)?</label>
+<div class="flex gap-6">
+<label class="flex items-center gap-2 cursor-pointer">
+<input class="text-primary focus:ring-primary h-5 w-5" name="gridvis" type="radio"/>
+<span>Yes, full integration</span>
+</label>
+<label class="flex items-center gap-2 cursor-pointer">
+<input class="text-primary focus:ring-primary h-5 w-5" name="gridvis" type="radio"/>
+<span>No, standalone hardware only</span>
+</label>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact Information Section -->
+<section class="bg-white dark:bg-slate-900 p-6 rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm">
+<div class="flex items-center gap-2 mb-6 text-primary">
+<span class="material-symbols-outlined">contact_mail</span>
+<h3 class="text-lg font-bold">Contact Information</h3>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="flex flex-col gap-2">
+<label class="text-sm font-semibold">Full Name</label>
+<input class="form-input w-full rounded-lg border-slate-300 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 focus:border-primary focus:ring-primary" placeholder="John Doe" type="text"/>
+</div>
+<div class="flex flex-col gap-2">
+<label class="text-sm font-semibold">Company Name</label>
+<input class="form-input w-full rounded-lg border-slate-300 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 focus:border-primary focus:ring-primary" placeholder="Acme Corp" type="text"/>
+</div>
+<div class="flex flex-col gap-2">
+<label class="text-sm font-semibold">Business Email</label>
+<input class="form-input w-full rounded-lg border-slate-300 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 focus:border-primary focus:ring-primary" placeholder="john@company.com" type="email"/>
+</div>
+<div class="flex flex-col gap-2">
+<label class="text-sm font-semibold">Phone Number</label>
+<input class="form-input w-full rounded-lg border-slate-300 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 focus:border-primary focus:ring-primary" placeholder="+1 (555) 000-0000" type="tel"/>
+</div>
+</div>
+</section>
+<!-- Actions -->
+<div class="flex items-center justify-between pt-4">
+<button class="flex items-center gap-2 px-6 py-3 rounded-lg border border-slate-300 dark:border-slate-700 font-semibold hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors">
+<span class="material-symbols-outlined">arrow_back</span>
+                                Back
+                            </button>
+<button class="flex items-center gap-2 bg-primary text-white px-8 py-3 rounded-lg font-bold shadow-lg shadow-primary/20 hover:bg-primary/90 transition-all">
+                                Submit Quote Request
+                                <span class="material-symbols-outlined">send</span>
+</button>
+</div>
+</div>
+<!-- Right Column: Summary Side Panel -->
+<aside class="space-y-6">
+<div class="bg-primary/5 dark:bg-primary/10 border border-primary/20 p-6 rounded-xl sticky top-8">
+<h3 class="text-lg font-bold mb-4 flex items-center gap-2">
+<span class="material-symbols-outlined">assignment</span>
+                                Step 1 Summary
+                            </h3>
+<div class="space-y-4">
+<div class="flex flex-col border-b border-primary/10 pb-3">
+<span class="text-xs uppercase tracking-wider text-slate-500 font-bold">Solution Type</span>
+<span class="text-sm font-semibold">Power Quality Monitoring</span>
+</div>
+<div class="flex flex-col border-b border-primary/10 pb-3">
+<span class="text-xs uppercase tracking-wider text-slate-500 font-bold">Selected Hardware</span>
+<span class="text-sm font-semibold">UMG 512-PRO Series (Class A)</span>
+</div>
+<div class="flex flex-col border-b border-primary/10 pb-3">
+<span class="text-xs uppercase tracking-wider text-slate-500 font-bold">System Scope</span>
+<span class="text-sm font-semibold">High Voltage Infrastructure</span>
+</div>
+</div>
+<div class="mt-6">
+<button class="text-primary text-sm font-bold flex items-center gap-1 hover:underline">
+<span class="material-symbols-outlined text-sm">edit</span>
+                                    Edit Selection
+                                </button>
+</div>
+</div>
+<!-- Help Card -->
+<div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 p-6 rounded-xl">
+<div class="flex items-center gap-3 mb-3">
+<div class="p-2 bg-primary/10 rounded-lg">
+<span class="material-symbols-outlined text-primary">support_agent</span>
+</div>
+<h4 class="font-bold text-sm">Need Help?</h4>
+</div>
+<p class="text-xs text-slate-500 mb-4 leading-relaxed">
+                                Our technical specialists are available to help you configure the perfect solution for your grid.
+                            </p>
+<a class="text-xs font-bold text-primary hover:underline" href="#">Chat with an Engineer →</a>
+</div>
+</aside>
+</div>
+</div>
+</main>
+<!-- Footer Footer -->
+<footer class="mt-auto py-8 border-t border-slate-200 dark:border-slate-800 text-center">
+<p class="text-xs text-slate-500">© 2024 Inpower Industrial Solutions. All rights reserved.</p>
+</footer>
+</div>
+</body></html>

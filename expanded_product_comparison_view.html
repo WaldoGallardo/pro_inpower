@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Product Comparison | Inpower Industrial Premium</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#003366",
+                        "background-light": "#f5f7f8",
+                        "background-dark": "#0f1923",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>body { font-family: 'Inter', sans-serif; }
+        .sticky-header { position: sticky; top: 0; z-index: 40; }
+        .comparison-grid { display: grid; grid-template-columns: 240px repeat(5, 1fr); }</style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 font-display">
+<div class="relative flex min-h-screen flex-col">
+<!-- Top Navigation -->
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 px-6 py-3 lg:px-10">
+<div class="flex items-center gap-8">
+<div class="flex items-center gap-4 text-primary">
+<div class="size-8 flex items-center justify-center bg-primary rounded-lg text-white">
+<span class="material-symbols-outlined">bolt</span>
+</div>
+<h2 class="text-slate-900 dark:text-white text-xl font-bold leading-tight tracking-tight">Inpower</h2>
+</div>
+<nav class="hidden md:flex items-center gap-6">
+<a class="text-slate-600 dark:text-slate-300 text-sm font-medium hover:text-primary transition-colors" href="#">Catalog</a>
+<a class="text-slate-600 dark:text-slate-300 text-sm font-medium hover:text-primary transition-colors" href="#">Solutions</a>
+<a class="text-slate-600 dark:text-slate-300 text-sm font-medium hover:text-primary transition-colors" href="#">Support</a>
+</nav>
+</div>
+<div class="flex flex-1 justify-end gap-4 items-center">
+<label class="hidden sm:flex flex-col min-w-40 h-10 max-w-64">
+<div class="flex w-full flex-1 items-stretch rounded-lg h-full bg-slate-100 dark:bg-slate-800">
+<div class="text-slate-500 flex items-center justify-center pl-3">
+<span class="material-symbols-outlined text-xl">search</span>
+</div>
+<input class="form-input flex w-full min-w-0 flex-1 border-none bg-transparent focus:ring-0 text-sm placeholder:text-slate-500" placeholder="Search components..." value=""/>
+</div>
+</label>
+<button class="p-2 text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-full">
+<span class="material-symbols-outlined">notifications</span>
+</button>
+<div class="h-8 w-8 rounded-full bg-primary/10 border border-primary/20 flex items-center justify-center text-primary font-bold text-xs" data-alt="User avatar placeholder">JD</div>
+</div>
+</header>
+<main class="flex-1 max-w-[1440px] mx-auto w-full px-4 py-6 lg:px-10">
+<!-- Breadcrumbs -->
+<nav class="flex items-center gap-2 mb-6 text-sm">
+<a class="text-slate-500 hover:text-primary" href="#">Catalog</a>
+<span class="text-slate-400">/</span>
+<span class="text-primary font-semibold">Comparison</span>
+</nav>
+<!-- Page Title & Actions -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-8">
+<div class="flex flex-col gap-1">
+<h1 class="text-3xl font-black text-slate-900 dark:text-white tracking-tight">Product Comparison</h1>
+<p class="text-slate-500 dark:text-slate-400">Detailed technical analysis of 5 Janitza Power Analyzers</p>
+</div>
+<div class="flex gap-3">
+<button class="flex items-center gap-2 rounded-lg h-10 px-4 bg-slate-200 dark:bg-slate-800 text-slate-700 dark:text-slate-200 text-sm font-bold hover:bg-slate-300 transition-colors">
+<span class="material-symbols-outlined text-lg">download</span>
+<span>Download Report</span>
+</button>
+<button class="flex items-center gap-2 rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold hover:bg-primary/90 transition-colors">
+<span class="material-symbols-outlined text-lg">share</span>
+<span>Share Specs</span>
+</button>
+</div>
+</div>
+<!-- Highlight Diff Toggle -->
+<div class="mb-8 p-5 rounded-xl border border-primary/10 bg-white dark:bg-slate-900 shadow-sm flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
+<div class="flex gap-4 items-center">
+<div class="p-2 bg-primary/10 rounded-lg text-primary">
+<span class="material-symbols-outlined">difference</span>
+</div>
+<div>
+<p class="text-slate-900 dark:text-white text-base font-bold leading-tight">Highlight Differences</p>
+<p class="text-slate-500 dark:text-slate-400 text-sm">Show only specifications where these products differ.</p>
+</div>
+</div>
+<label class="relative inline-flex items-center cursor-pointer">
+<input class="sr-only peer" type="checkbox" value=""/>
+<div class="w-11 h-6 bg-slate-200 peer-focus:outline-none rounded-full peer dark:bg-slate-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-primary"></div>
+</label>
+</div>
+<!-- Comparison Table Container -->
+<div class="bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-800 overflow-hidden shadow-sm">
+<!-- Product Header Row (Sticky) -->
+<div class="sticky-header bg-white dark:bg-slate-900 border-b border-slate-200 dark:border-slate-800 shadow-sm">
+<div class="comparison-grid">
+<div class="p-6 flex flex-col justify-end">
+<span class="text-xs font-bold uppercase tracking-wider text-slate-400">Specifications</span>
+</div>
+<!-- Product 1 -->
+<div class="p-6 border-l border-slate-100 dark:border-slate-800 flex flex-col items-center text-center gap-4">
+<div class="w-32 h-32 bg-slate-50 dark:bg-slate-800 rounded-lg flex items-center justify-center p-2">
+<img alt="Janitza UMG 801" class="object-contain" data-alt="Janitza UMG 801 Power Analyzer front view" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCGODTPG6o7DYi2jRi55RjlAN58oFcO9AEefQqh2vctfwzEA12gVG09lLDISQ3iB3ROavGRZ3SwQWUQsauA5hGKO1sdELL42vK6AQxL7E9hCeQPwUyleocLWYJT4YBqeH_lhnR8sWjqrgERUt4rPz1Q8qyhDptFVSye5E4y52T03xz-lT0Dvi-ikQE1sG6zjjWbtgv6oYuclpesBDhYpII7dtYUPboPHPuH1tGinQd-IDMgZDrCpA8T6rMpPKSLpvKe_8XKOrHH1Gmc"/>
+</div>
+<div>
+<h3 class="font-bold text-slate-900 dark:text-white">UMG 801</h3>
+<p class="text-xs text-primary font-semibold">Modular Power Analyzer</p>
+</div>
+<div class="flex flex-col w-full gap-2">
+<button class="w-full py-2 bg-primary text-white text-xs font-bold rounded-lg hover:bg-primary/90">Add to Quote</button>
+<button class="w-full py-2 border border-slate-200 dark:border-slate-700 text-xs font-bold rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800">View Specs</button>
+</div>
+</div>
+<!-- Product 2 -->
+<div class="p-6 border-l border-slate-100 dark:border-slate-800 flex flex-col items-center text-center gap-4 bg-primary/5">
+<div class="w-32 h-32 bg-white dark:bg-slate-800 rounded-lg flex items-center justify-center p-2 shadow-sm">
+<img alt="Janitza UMG 800" class="object-contain" data-alt="Janitza UMG 800 Power Analyzer front view" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAC0GPLLhUI9FEp4ANDCNqVZdtRYiTxDt3rX98Yb6i4FLSREtZfwGDbKvossKvY2Gr2OBCdiHnLGfL_wh1FspUUCCcbyEGOCwp1Yz1euFNbao6_V3VkeyJvezJf45W8UTUBA5huuF6GgbDwrRQWaN0wT0Bv3fal9lM1eX9AAUExIfke72rHcA1mS_0DSkDmZLCkEz5lEgqbbC_zWwt6ozPi-BFWwFX6zGAZ-_0IgEgstM3vmepcxjEQ51-DuAT8wGO4htrjzBfBtK7k"/>
+</div>
+<div>
+<h3 class="font-bold text-slate-900 dark:text-white">UMG 800</h3>
+<p class="text-xs text-primary font-semibold">Standard Analyzer</p>
+</div>
+<div class="flex flex-col w-full gap-2">
+<button class="w-full py-2 bg-primary text-white text-xs font-bold rounded-lg hover:bg-primary/90">Add to Quote</button>
+<button class="w-full py-2 border border-slate-200 dark:border-slate-700 text-xs font-bold rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800">View Specs</button>
+</div>
+</div>
+<!-- Product 3 -->
+<div class="p-6 border-l border-slate-100 dark:border-slate-800 flex flex-col items-center text-center gap-4">
+<div class="w-32 h-32 bg-slate-50 dark:bg-slate-800 rounded-lg flex items-center justify-center p-2">
+<img alt="Janitza UMG 512-PRO" class="object-contain" data-alt="Janitza UMG 512-PRO Power Analyzer front view" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDaChmfAiJqmdNdOXNWAHuoBYSNZKIkYvdEUXNJWcwuwQtnEGhD3KG6VFnJ9BIAIwGD2Qb3i1Gpd9TEyoXh51qA0laOTBEie3Q6j3nSh9orTZtsT5K5rwSuNVPgVr0BUAKR-BG72ZfdXSezXSndcZQW6NXk-XsE1ZxF0tTREwX2rouiyvW5IDYB4ShDKvS7CCQCBPCmgzYmuInaQehN-47nNJxYAYPRHLiTBYgdOuOO_mvAHFsaTOfkGnkimxxPQawHWkGRN7uBW3Nr"/>
+</div>
+<div>
+<h3 class="font-bold text-slate-900 dark:text-white">UMG 512-PRO</h3>
+<p class="text-xs text-primary font-semibold">Class A Power Quality</p>
+</div>
+<div class="flex flex-col w-full gap-2">
+<button class="w-full py-2 bg-primary text-white text-xs font-bold rounded-lg hover:bg-primary/90">Add to Quote</button>
+<button class="w-full py-2 border border-slate-200 dark:border-slate-700 text-xs font-bold rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800">View Specs</button>
+</div>
+</div>
+<!-- Product 4: UMG 604-PRO -->
+<div class="p-6 border-l border-slate-100 dark:border-slate-800 flex flex-col items-center text-center gap-4">
+<div class="w-32 h-32 bg-slate-50 dark:bg-slate-800 rounded-lg flex items-center justify-center p-2">
+<img alt="Janitza UMG 604-PRO" class="object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDaChmfAiJqmdNdOXNWAHuoBYSNZKIkYvdEUXNJWcwuwQtnEGhD3KG6VFnJ9BIAIwGD2Qb3i1Gpd9TEyoXh51qA0laOTBEie3Q6j3nSh9orTZtsT5K5rwSuNVPgVr0BUAKR-BG72ZfdXSezXSndcZQW6NXk-XsE1ZxF0tTREwX2rouiyvW5IDYB4ShDKvS7CCQCBPCmgzYmuInaQehN-47nNJxYAYPRHLiTBYgdOuOO_mvAHFsaTOfkGnkimxxPQawHWkGRN7uBW3Nr"/>
+</div>
+<div>
+<h3 class="font-bold text-slate-900 dark:text-white">UMG 604-PRO</h3>
+<p class="text-xs text-primary font-semibold">Ethernet Power Quality</p>
+</div>
+<div class="flex flex-col w-full gap-2">
+<button class="w-full py-2 bg-primary text-white text-xs font-bold rounded-lg hover:bg-primary/90">Add to Quote</button>
+<button class="w-full py-2 border border-slate-200 dark:border-slate-700 text-xs font-bold rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800">View Specs</button>
+</div>
+</div>
+<!-- Product 5: UMG 96-PA -->
+<div class="p-6 border-l border-slate-100 dark:border-slate-800 flex flex-col items-center text-center gap-4">
+<div class="w-32 h-32 bg-slate-50 dark:bg-slate-800 rounded-lg flex items-center justify-center p-2">
+<img alt="Janitza UMG 96-PA" class="object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAC0GPLLhUI9FEp4ANDCNqVZdtRYiTxDt3rX98Yb6i4FLSREtZfwGDbKvossKvY2Gr2OBCdiHnLGfL_wh1FspUUCCcbyEGOCwp1Yz1euFNbao6_V3VkeyJvezJf45W8UTUBA5huuF6GgbDwrRQWaN0wT0Bv3fal9lM1eX9AAUExIfke72rHcA1mS_0DSkDmZLCkEz5lEgqbbC_zWwt6ozPi-BFWwFX6zGAZ-_0IgEgstM3vmepcxjEQ51-DuAT8wGO4htrjzBfBtK7k"/>
+</div>
+<div>
+<h3 class="font-bold text-slate-900 dark:text-white">UMG 96-PA</h3>
+<p class="text-xs text-primary font-semibold">Universal Meter</p>
+</div>
+<div class="flex flex-col w-full gap-2">
+<button class="w-full py-2 bg-primary text-white text-xs font-bold rounded-lg hover:bg-primary/90">Add to Quote</button>
+<button class="w-full py-2 border border-slate-200 dark:border-slate-700 text-xs font-bold rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800">View Specs</button>
+</div>
+</div></div>
+</div>
+<!-- Table Content -->
+<div class="divide-y divide-slate-100 dark:divide-slate-800">
+<!-- Section: Core Specifications -->
+<div class="bg-slate-50 dark:bg-slate-800/50 px-6 py-2">
+<span class="text-[10px] font-bold uppercase tracking-widest text-slate-500">Core Performance</span>
+</div>
+<!-- Row: Measurement Class -->
+<div class="comparison-grid hover:bg-slate-50 dark:hover:bg-slate-800/30 transition-colors">
+<div class="p-4 flex items-center gap-2">
+<span class="text-sm font-medium text-slate-600 dark:text-slate-400">Measurement Class</span>
+</div>
+<div class="p-4 border-l border-slate-100 dark:border-slate-800 text-center text-sm font-semibold">Class S</div>
+<div class="p-4 border-l border-slate-100 dark:border-slate-800 text-center text-sm font-semibold bg-primary/5">Class S</div>
+<div class="p-4 border-l border-slate-100 dark:border-slate-800 text-center text-sm font-bold text-primary">Class A</div>
+<div class="p-4 border-l border-slate-100 dark:border-slate-800 text-center text-sm">Class S</div>
+<div class="p-4 border-l border-slate-100 dark:border-slate-800 text-center text-sm">Class 0.2S</div></div>
+<!-- Row: Accuracy -->
+<div class="comparison-grid hover:bg-slate-50 dark:hover:bg-slate-800/30 transition-colors">
+<div class="p-4 flex items-center gap-2">
+<span class="text-sm font-medium text-slate-600 dark:text-slate-400">Accuracy (V/I)</span>
+</div>
+<div class="p-4 border-l border-slate-100 dark:border-slate-800 text-center text-sm">0.2%</div>
+<div class="p-4 border-l border-slate-100 dark:border-slate-800 text-center text-sm bg-primary/5">0.2%</div>
+<div class="p-4 border-l border-slate-100 dark:border-slate-800 text-center text-sm font-semibold">0.1%</div>
+<div class="p-4 border-l border-slate-100 dark:border-slate-800 text-center text-sm">0.2%</div>
+<div class="p-4 border-l border-slate-100 dark:border-slate-800 text-center text-sm">0.2%</div></div>
+<!-- Row: Sampling Rate -->
+<div class="comparison-grid hover:bg-slate-50 dark:hover:bg-slate-800/30 transition-colors">
+<div class="p-4 flex items-center gap-2">
+<span class="text-sm font-medium text-slate-600 dark:text-slate-400">Sampling Rate</span>
+</div>
+<div class="p-4 border-l border-slate-100 dark:border-slate-800 text-center text-sm">25.6 kHz</div>
+<div class="p-4 border-l border-slate-100 dark:border-slate-800 text-center text-sm bg-primary/5">25.6 kHz</div>
+<div class="p-4 border-l border-slate-100 dark:border-slate-800 text-center text-sm font-semibold">25.6 kHz (15 bit)</div>
+<div class="p-4 border-l border-slate-100 dark:border-slate-800 text-center text-sm">20 kHz</div>
+<div class="p-4 border-l border-slate-100 dark:border-slate-800 text-center text-sm">20 kHz</div></div>
+<!-- Section: Analysis -->
+<div class="bg-slate-50 dark:bg-slate-800/50 px-6 py-2">
+<span class="text-[10px] font-bold uppercase tracking-widest text-slate-500">Analysis &amp; Monitoring</span>
+</div>
+<!-- Row: Harmonics -->
+<div class="comparison-grid hover:bg-slate-50 dark:hover:bg-slate-800/30 transition-colors">
+<div class="p-4 flex items-center gap-2">
+<span class="text-sm font-medium text-slate-600 dark:text-slate-400">Harmonics</span>
+</div>
+<div class="p-4 border-l border-slate-100 dark:border-slate-800 text-center text-sm">Up to 63rd</div>
+<div class="p-4 border-l border-slate-100 dark:border-slate-800 text-center text-sm bg-primary/5">Up to 63rd</div>
+<div class="p-4 border-l border-slate-100 dark:border-slate-800 text-center text-sm font-bold text-primary">Up to 127th</div>
+<div class="p-4 border-l border-slate-100 dark:border-slate-800 text-center text-sm">Up to 40th</div>
+<div class="p-4 border-l border-slate-100 dark:border-slate-800 text-center text-sm">Up to 40th</div></div>
+<!-- Row: RCM Monitoring -->
+<div class="comparison-grid hover:bg-slate-50 dark:hover:bg-slate-800/30 transition-colors">
+<div class="p-4 flex items-center gap-2">
+<span class="text-sm font-medium text-slate-600 dark:text-slate-400">RCM Monitoring</span>
+</div>
+<div class="p-4 border-l border-slate-100 dark:border-slate-800 text-center">
+<span class="material-symbols-outlined text-emerald-500">check_circle</span>
+</div>
+<div class="p-4 border-l border-slate-100 dark:border-slate-800 text-center bg-primary/5">
+<span class="material-symbols-outlined text-slate-300">cancel</span>
+</div>
+<div class="p-4 border-l border-slate-100 dark:border-slate-800 text-center">
+<span class="material-symbols-outlined text-emerald-500 font-bold">check_circle</span>
+</div>
+<div class="p-4 border-l border-slate-100 dark:border-slate-800 text-center">
+<span class="material-symbols-outlined text-emerald-500">check_circle</span>
+</div>
+<div class="p-4 border-l border-slate-100 dark:border-slate-800 text-center">
+<span class="material-symbols-outlined text-slate-300">cancel</span>
+</div></div>
+<!-- Section: Connectivity -->
+<div class="bg-slate-50 dark:bg-slate-800/50 px-6 py-2">
+<span class="text-[10px] font-bold uppercase tracking-widest text-slate-500">Connectivity &amp; Storage</span>
+</div>
+<!-- Row: Interfaces -->
+<div class="comparison-grid hover:bg-slate-50 dark:hover:bg-slate-800/30 transition-colors">
+<div class="p-4 flex items-center gap-2">
+<span class="text-sm font-medium text-slate-600 dark:text-slate-400">Interfaces</span>
+</div>
+<div class="p-4 border-l border-slate-100 dark:border-slate-800 text-center text-xs space-y-1">
+<div class="bg-slate-100 dark:bg-slate-800 px-2 py-0.5 rounded">Modbus TCP/RTU</div>
+<div class="bg-slate-100 dark:bg-slate-800 px-2 py-0.5 rounded">OPC UA</div>
+</div>
+<div class="p-4 border-l border-slate-100 dark:border-slate-800 text-center text-xs space-y-1 bg-primary/5">
+<div class="bg-white dark:bg-slate-800 px-2 py-0.5 rounded shadow-sm">Modbus RTU</div>
+</div>
+<div class="p-4 border-l border-slate-100 dark:border-slate-800 text-center text-xs space-y-1">
+<div class="bg-slate-100 dark:bg-slate-800 px-2 py-0.5 rounded">Modbus TCP</div>
+<div class="bg-slate-100 dark:bg-slate-800 px-2 py-0.5 rounded">Profinet</div>
+<div class="bg-slate-100 dark:bg-slate-800 px-2 py-0.5 rounded">BACnet</div>
+</div>
+<div class="p-4 border-l border-slate-100 dark:border-slate-800 text-center text-xs space-y-1">
+<div class="bg-slate-100 dark:bg-slate-800 px-2 py-0.5 rounded">Modbus / Ethernet</div>
+</div>
+<div class="p-4 border-l border-slate-100 dark:border-slate-800 text-center text-xs space-y-1">
+<div class="bg-slate-100 dark:bg-slate-800 px-2 py-0.5 rounded">Modbus RTU</div>
+</div></div>
+<!-- Row: Internal Memory -->
+<div class="comparison-grid hover:bg-slate-50 dark:hover:bg-slate-800/30 transition-colors">
+<div class="p-4 flex items-center gap-2">
+<span class="text-sm font-medium text-slate-600 dark:text-slate-400">Internal Memory</span>
+</div>
+<div class="p-4 border-l border-slate-100 dark:border-slate-800 text-center text-sm">4 GB (SD)</div>
+<div class="p-4 border-l border-slate-100 dark:border-slate-800 text-center text-sm bg-primary/5">256 MB</div>
+<div class="p-4 border-l border-slate-100 dark:border-slate-800 text-center text-sm">256 MB</div>
+<div class="p-4 border-l border-slate-100 dark:border-slate-800 text-center text-sm">128 MB</div>
+<div class="p-4 border-l border-slate-100 dark:border-slate-800 text-center text-sm">---</div></div>
+<!-- Row: Display Type -->
+<div class="comparison-grid hover:bg-slate-50 dark:hover:bg-slate-800/30 transition-colors">
+<div class="p-4 flex items-center gap-2">
+<span class="text-sm font-medium text-slate-600 dark:text-slate-400">Display Type</span>
+</div>
+<div class="p-4 border-l border-slate-100 dark:border-slate-800 text-center text-sm">OLED Graphic</div>
+<div class="p-4 border-l border-slate-100 dark:border-slate-800 text-center text-sm bg-primary/5">LCD Monochrome</div>
+<div class="p-4 border-l border-slate-100 dark:border-slate-800 text-center text-sm font-semibold">Color Touch Display</div>
+<div class="p-4 border-l border-slate-100 dark:border-slate-800 text-center text-sm">LCD Graphic</div>
+<div class="p-4 border-l border-slate-100 dark:border-slate-800 text-center text-sm">LCD Segment</div></div>
+</div>
+<!-- Footer Action Bar -->
+<div class="bg-slate-50 dark:bg-slate-800/50 border-t border-slate-200 dark:border-slate-800 px-6 py-6 text-center">
+<p class="text-slate-500 text-sm mb-4">Need a specific configuration? Our engineers can help you choose the right model.</p>
+<div class="flex justify-center gap-4">
+<button class="px-6 py-2.5 bg-primary text-white font-bold rounded-lg shadow-lg shadow-primary/20 hover:scale-[1.02] transition-transform">Request Custom Quote</button>
+<button class="px-6 py-2.5 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 font-bold rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800">Download Data Sheets (ZIP)</button>
+</div>
+</div>
+</div>
+</main>
+<!-- Sidebar / Mini Cart (Optional context element) -->
+<div class="fixed bottom-6 right-6 hidden lg:block">
+<button class="flex items-center gap-3 bg-white dark:bg-slate-900 p-4 rounded-xl shadow-2xl border border-slate-200 dark:border-slate-800">
+<div class="relative">
+<span class="material-symbols-outlined text-primary text-3xl">shopping_cart</span>
+<span class="absolute -top-2 -right-2 bg-primary text-white text-[10px] font-bold w-5 h-5 rounded-full flex items-center justify-center">3</span>
+</div>
+<div class="text-left">
+<p class="text-xs font-bold uppercase text-slate-400">Active Comparison</p>
+<p class="text-sm font-bold text-slate-900 dark:text-white">View Quote List</p>
+</div>
+</button>
+</div>
+<!-- Footer Footer -->
+<footer class="mt-auto border-t border-slate-200 dark:border-slate-800 py-8 px-10 text-center bg-white dark:bg-slate-900">
+<div class="flex flex-col md:flex-row items-center justify-between gap-6 max-w-7xl mx-auto">
+<div class="flex items-center gap-2 opacity-50">
+<span class="material-symbols-outlined text-sm">copyright</span>
+<span class="text-xs">2024 Inpower Industrial Solutions. All rights reserved.</span>
+</div>
+<div class="flex gap-8 text-xs font-medium text-slate-500">
+<a class="hover:text-primary" href="#">Legal Notice</a>
+<a class="hover:text-primary" href="#">Privacy Policy</a>
+<a class="hover:text-primary" href="#">Compliance</a>
+<a class="hover:text-primary" href="#">Global Support</a>
+</div>
+</div>
+</footer>
+</div>
+</body></html>

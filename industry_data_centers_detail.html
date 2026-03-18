@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+
+<html lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#003366",
+              "background-light": "#f5f7f8",
+              "background-dark": "#0f1923",
+            },
+            fontFamily: {
+              "display": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<title>Inpower - Soluciones de Monitoreo para Data Centers</title>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100">
+<div class="relative flex min-h-screen w-full flex-col overflow-x-hidden">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-slate-200 dark:border-slate-800 px-6 md:px-20 py-4 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md sticky top-0 z-50">
+<div class="flex items-center gap-8">
+<div class="flex items-center gap-3 text-primary">
+<div class="size-8">
+<svg fill="currentColor" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M39.475 21.6262C40.358 21.4363 40.6863 21.5589 40.7581 21.5934C40.7876 21.655 40.8547 21.857 40.8082 22.3336C40.7408 23.0255 40.4502 24.0046 39.8572 25.2301C38.6799 27.6631 36.5085 30.6631 33.5858 33.5858C30.6631 36.5085 27.6632 38.6799 25.2301 39.8572C24.0046 40.4502 23.0255 40.7407 22.3336 40.8082C21.8571 40.8547 21.6551 40.7875 21.5934 40.7581C21.5589 40.6863 21.4363 40.358 21.6262 39.475C21.8562 38.4054 22.4689 36.9657 23.5038 35.2817C24.7575 33.2417 26.5497 30.9744 28.7621 28.762C30.9744 26.5497 33.2417 24.7574 35.2817 23.5037C36.9657 22.4689 38.4054 21.8562 39.475 21.6262ZM4.41189 29.2403L18.7597 43.5881C19.8813 44.7097 21.4027 44.9179 22.7217 44.7893C24.0585 44.659 25.5148 44.1631 26.9723 43.4579C29.9052 42.0387 33.2618 39.5667 36.4142 36.4142C39.5667 33.2618 42.0387 29.9052 43.4579 26.9723C44.1631 25.5148 44.659 24.0585 44.7893 22.7217C44.9179 21.4027 44.7097 19.8813 43.5881 18.7597L29.2403 4.41187C27.8527 3.02428 25.8765 3.02573 24.2861 3.36776C22.6081 3.72863 20.7334 4.58419 18.8396 5.74801C16.4978 7.18716 13.9881 9.18353 11.5858 11.5858C9.18354 13.988 7.18717 16.4978 5.74802 18.8396C4.58421 20.7334 3.72865 22.6081 3.36778 24.2861C3.02574 25.8765 3.02429 27.8527 4.41189 29.2403Z" fill-rule="evenodd"></path>
+</svg>
+</div>
+<h2 class="text-xl font-black leading-tight tracking-tighter">INPOWER</h2>
+</div>
+<nav class="hidden lg:flex items-center gap-8">
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="gridvis_software_solution_page.html">Soluciones</a>
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="product_catalog_landing_page.html">Productos</a>
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="gridvis_page_with_success_stories.html">Casos de Éxito</a>
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="service_support_portal.html">Soporte</a>
+</nav>
+</div>
+<div class="flex items-center gap-4">
+<button class="hidden sm:flex min-w-[120px] cursor-pointer items-center justify-center rounded-lg h-10 px-6 bg-primary text-white text-sm font-bold shadow-lg shadow-primary/20 hover:scale-105 transition-transform">
+                    Contacto
+                </button>
+<button class="lg:hidden p-2">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</header>
+<section class="relative h-[600px] w-full flex items-center justify-start overflow-hidden">
+<div class="absolute inset-0 bg-gradient-to-r from-background-dark/90 via-background-dark/60 to-transparent z-10"></div>
+<div class="absolute inset-0 w-full h-full bg-cover bg-center" data-alt="High-tech modern data center server room with blue lighting" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDxZ7DkPXCybinoWy9Y80ITzafMULT7umh3X9mXMiktLUL9x1S9EG2Z6UmJ9coZva_MCPf1Drx8BBP16f4tB1zwPW09F3faji5qIwfI_xjmEsSl8vDxmqfVHXwQXqAnhzdLn4Q_v1Mzp9oAuj8WjZRr10VclorxkYpfjFSMv4EYKjQarQbnLkFH95Vw9bzCBBksWtZXRfDMo8Np5A6oWcJlhUDGQxnDo-DU4OAX7kcuPYM2KTh1YAdM9fsE1MfVqlMR3Qq0Av4mNlyP');"></div>
+<div class="relative z-20 px-6 md:px-20 max-w-4xl flex flex-col gap-6">
+<span class="inline-block px-3 py-1 rounded bg-primary/20 text-primary border border-primary/30 text-xs font-bold uppercase tracking-widest w-fit">Data Center Specialist</span>
+<h1 class="text-white text-4xl md:text-6xl font-black leading-[1.1] tracking-tight">
+                    Soluciones de Monitoreo para <span class="text-primary">Data Centers</span>
+</h1>
+<p class="text-slate-300 text-lg md:text-xl font-medium leading-relaxed max-w-2xl">
+                    Garantice la continuidad operacional, optimice el PUE y gestione la energía con precisión de Clase A. Partner estratégico de Janitza.
+                </p>
+<div class="flex flex-wrap gap-4 mt-4">
+<button class="h-14 px-8 bg-primary text-white rounded-lg font-bold text-lg hover:bg-primary/90 transition-all shadow-xl shadow-primary/30">
+                        Solicitar Asesoría
+                    </button>
+<button class="h-14 px-8 bg-white/10 backdrop-blur-md text-white border border-white/20 rounded-lg font-bold text-lg hover:bg-white/20 transition-all">
+                        Ver Documentación
+                    </button>
+</div>
+</div>
+</section>
+<section class="py-20 px-6 md:px-20 bg-background-light dark:bg-background-dark">
+<div class="mb-12">
+<h2 class="text-3xl font-black mb-4">Desafíos Críticos en Infraestructura</h2>
+<div class="h-1.5 w-20 bg-primary rounded-full"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<div class="group flex flex-col gap-4 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900/50 p-8 hover:border-primary/50 transition-all hover:shadow-2xl hover:shadow-primary/5">
+<div class="size-14 rounded-lg bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-all">
+<span class="material-symbols-outlined !text-3xl">verified_user</span>
+</div>
+<div>
+<h3 class="text-xl font-bold mb-2">Uptime (Tier III/IV)</h3>
+<p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">Evite caídas críticas mediante el monitoreo continuo de la calidad de energía en tiempo real.</p>
+</div>
+</div>
+<div class="group flex flex-col gap-4 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900/50 p-8 hover:border-primary/50 transition-all hover:shadow-2xl hover:shadow-primary/5">
+<div class="size-14 rounded-lg bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-all">
+<span class="material-symbols-outlined !text-3xl">energy_savings_leaf</span>
+</div>
+<div>
+<h3 class="text-xl font-bold mb-2">Optimización PUE</h3>
+<p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">Reduzca el OPEX analizando la eficiencia del uso de energía de sus sistemas de enfriamiento e IT.</p>
+</div>
+</div>
+<div class="group flex flex-col gap-4 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900/50 p-8 hover:border-primary/50 transition-all hover:shadow-2xl hover:shadow-primary/5">
+<div class="size-14 rounded-lg bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-all">
+<span class="material-symbols-outlined !text-3xl">receipt_long</span>
+</div>
+<div>
+<h3 class="text-xl font-bold mb-2">Facturación de Racks</h3>
+<p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">Medición MID-certified precisa por rack para una distribución de costos justa a clientes finales.</p>
+</div>
+</div>
+<div class="group flex flex-col gap-4 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900/50 p-8 hover:border-primary/50 transition-all hover:shadow-2xl hover:shadow-primary/5">
+<div class="size-14 rounded-lg bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-all">
+<span class="material-symbols-outlined !text-3xl">detector_status</span>
+</div>
+<div>
+<h3 class="text-xl font-bold mb-2">Seguridad (RCM)</h3>
+<p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">Monitoreo de corrientes residuales para prevenir incendios y paradas no programadas.</p>
+</div>
+</div>
+</div>
+</section>
+<section class="py-24 px-6 md:px-20 bg-slate-100 dark:bg-slate-900/30">
+<div class="flex flex-col lg:flex-row items-center gap-16">
+<div class="flex-1 space-y-8">
+<h2 class="text-4xl font-black leading-tight">Arquitectura de la Solución</h2>
+<p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+                        Integramos hardware de vanguardia con software de gestión avanzado para ofrecer una visibilidad total de su infraestructura. Desde el punto de entrada hasta cada PDU en el rack.
+                    </p>
+<ul class="space-y-4">
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary mt-1">check_circle</span>
+<div>
+<span class="font-bold block">Hardware Janitza</span>
+<span class="text-sm text-slate-500">Analizadores UMG de Clase A para precisión de laboratorio.</span>
+</div>
+</li>
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary mt-1">check_circle</span>
+<div>
+<span class="font-bold block">Software GridVis®</span>
+<span class="text-sm text-slate-500">Visualización centralizada, análisis de eventos y reportes automáticos.</span>
+</div>
+</li>
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary mt-1">check_circle</span>
+<div>
+<span class="font-bold block">Reporting Automatizado</span>
+<span class="text-sm text-slate-500">Informes de cumplimiento de normativas EN 50160 y IEEE 519.</span>
+</div>
+</li>
+</ul>
+</div>
+<div class="flex-1 w-full max-w-xl">
+<div class="aspect-video bg-gradient-to-br from-primary to-blue-900 rounded-2xl p-1 shadow-2xl overflow-hidden">
+<div class="w-full h-full bg-slate-950 rounded-xl relative overflow-hidden flex items-center justify-center">
+<div class="absolute inset-0 opacity-20" style="background-image: radial-gradient(circle at 2px 2px, white 1px, transparent 0); background-size: 24px 24px;"></div>
+<img class="w-full h-full object-cover opacity-60" data-alt="Data visualization dashboard showing energy consumption charts" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDtTGauymo3MRs530TeCFhgLj46gm2iUQec8Xh6enxjTq7zfjnhCcB7vWjqBwA8_etmRxJ3LydvJLWcvUhBLROFZrpGOpwwjspaYOx63pXIxewGsgPBCpShxZbt8qfuzGaf2N3VpoCfu-PHR6LGPzQz53y4gQ3aW5IRDM8sEVYnot270xiJKiekXkGpKkITTsesdanXm845DmqGAFMZ1noJUEIcNL10oR-uPqYbmHEOsjxZ7AZ9bNdNk0QIwz4O62UuVrYpyJVE45zW"/>
+<div class="absolute inset-0 flex items-center justify-center">
+<span class="bg-primary/80 backdrop-blur-sm p-4 rounded-full text-white cursor-pointer hover:scale-110 transition-transform">
+<span class="material-symbols-outlined !text-4xl">play_arrow</span>
+</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-20 px-6 md:px-20">
+<h2 class="text-3xl font-black mb-12 text-center">Beneficios Específicos</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+<div class="text-center flex flex-col items-center gap-4">
+<span class="material-symbols-outlined text-primary !text-5xl">notifications_active</span>
+<h4 class="font-bold text-lg">Alertas en Tiempo Real</h4>
+<p class="text-slate-500 text-sm">Notificaciones instantáneas vía Email/SMS ante cualquier desviación de parámetros.</p>
+</div>
+<div class="text-center flex flex-col items-center gap-4">
+<span class="material-symbols-outlined text-primary !text-5xl">assignment_turned_in</span>
+<h4 class="font-bold text-lg">ISO 50001 Compliance</h4>
+<p class="text-slate-500 text-sm">Herramientas nativas para la implementación y auditoría de sistemas de gestión de energía.</p>
+</div>
+<div class="text-center flex flex-col items-center gap-4">
+<span class="material-symbols-outlined text-primary !text-5xl">verified</span>
+<h4 class="font-bold text-lg">Facturación Certificada</h4>
+<p class="text-slate-500 text-sm">Medidores MID para transacciones comerciales y cobros a inquilinos del Data Center.</p>
+</div>
+<div class="text-center flex flex-col items-center gap-4">
+<span class="material-symbols-outlined text-primary !text-5xl">analytics</span>
+<h4 class="font-bold text-lg">Análisis de Armónicos</h4>
+<p class="text-slate-500 text-sm">Identificación de perturbaciones hasta el armónico 63 para proteger equipos sensibles.</p>
+</div>
+</div>
+</section>
+<section class="py-20 px-6 md:px-20 bg-primary/5">
+<h2 class="text-3xl font-black mb-12">Hardware Destacado</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="bg-white dark:bg-slate-900 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-800 flex flex-col">
+<div class="h-64 bg-slate-100 flex items-center justify-center p-8">
+<div class="w-full h-full bg-slate-300 rounded animate-pulse flex items-center justify-center text-slate-500">
+<img alt="UMG 512-PRO" data-alt="Janitza UMG 512-PRO Power Quality Analyzer device" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBjCD5WqJkqv4x5x1t45VB91VZm44YfP_0YfHyttVQHiWQvw7BMIkT_WEiEbTN-bZTNz8dkMm4T3reI8xOl4q28Wfv58GeiAhvbn-ZQTVwPq5zs2SmdEIPKi3OAuC9BFemgRb95kOoJj84u6sZa4tx45UWf9VBeVVGSZW7-WCPiPjham30B3oU5YWal5mQpMN0UDdae-x4TF7WpJdfm1cTa_w2pvf8ZyrKoQ0qCNfIUdCtEVKiL2mEeijF_jNy-7dNaYO0K1XKkwNOk"/>
+</div>
+</div>
+<div class="p-8 flex flex-col flex-1">
+<span class="text-primary text-xs font-bold uppercase mb-2">Power Quality</span>
+<h3 class="text-2xl font-black mb-4">UMG 512-PRO</h3>
+<p class="text-slate-500 text-sm mb-6 flex-1">Analizador de redes de Clase A para el monitoreo de la calidad de energía en el punto de acometida.</p>
+<button class="w-full py-3 border border-primary text-primary font-bold rounded-lg hover:bg-primary hover:text-white transition-colors">Ver Detalles</button>
+</div>
+</div>
+<div class="bg-white dark:bg-slate-900 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-800 flex flex-col">
+<div class="h-64 bg-slate-100 flex items-center justify-center p-8">
+<div class="w-full h-full bg-slate-300 rounded animate-pulse flex items-center justify-center text-slate-500">
+<img alt="UMG 800" data-alt="Janitza UMG 800 Multi-channel modular energy meter" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBHlk3Cl4RRaMjsNV4M5p1ptQAw5APK3Zhop-H3_SW8sZz-VWm81oF-yvTfg2pyo32DofQHnsXDB-FDZ13AtEcBmfT6sS0SDCu-QMUKsRjDnVmyfFZ1SeimPVSfWzIUwZmBfeWIcJu0nnD6sgsjokkupDXTv__dqyvc9f5aZPWnf87BKs03Y8J5WPgVVIN_fnixsm18K60glSR-_XFuHFWnK2otmuU07gEDk7aO3rFONZBhqBKA4edsTaRujAToMiQtVp0gZnWro-Rl"/>
+</div>
+</div>
+<div class="p-8 flex flex-col flex-1">
+<span class="text-primary text-xs font-bold uppercase mb-2">Modular Multi-channel</span>
+<h3 class="text-2xl font-black mb-4">UMG 800</h3>
+<p class="text-slate-500 text-sm mb-6 flex-1">Sistema modular ideal para el monitoreo de múltiples circuitos en tableros de distribución y racks.</p>
+<button class="w-full py-3 border border-primary text-primary font-bold rounded-lg hover:bg-primary hover:text-white transition-colors">Ver Detalles</button>
+</div>
+</div>
+<div class="bg-white dark:bg-slate-900 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-800 flex flex-col">
+<div class="h-64 bg-slate-100 flex items-center justify-center p-8">
+<div class="w-full h-full bg-slate-300 rounded animate-pulse flex items-center justify-center text-slate-500">
+<img alt="RCM Module" data-alt="Residual current monitoring RCM module for fire prevention" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD4xvwyy0p9WjkVwtkYUXfd8EshCPNy5nU-OZErw4KXoFQeDTiYS-vTEQ41y2FDBLNB-ZL_nQcLzauEcEFzgcpZBVhHthKUhCp7Cv_T5RfRbHcE4BXiwvkvPb9TyJVSzpDD2NFHzWxxGpj5WvVFc4Xre4qRlpOxriAoho7Xsr33ZBigY_q_sa9jtXBYfBpUwMGTs2-55vVLNoUU7bCB2ftj3HPWsQJ9Ka_nLNu5pUN5yT5z7pyur4jYiXb1xNmLz4-e7_IHBzHVzVsG"/>
+</div>
+</div>
+<div class="p-8 flex flex-col flex-1">
+<span class="text-primary text-xs font-bold uppercase mb-2">Safety First</span>
+<h3 class="text-2xl font-black mb-4">Módulos RCM</h3>
+<p class="text-slate-500 text-sm mb-6 flex-1">Monitoreo de corrientes residuales para la detección temprana de fallas de aislamiento e incendios.</p>
+<button class="w-full py-3 border border-primary text-primary font-bold rounded-lg hover:bg-primary hover:text-white transition-colors">Ver Detalles</button>
+</div>
+</div>
+</div>
+</section>
+<section class="py-16 px-6 md:px-20">
+<div class="bg-background-dark text-white rounded-3xl overflow-hidden relative group">
+<div class="absolute inset-0 bg-cover bg-center opacity-30 group-hover:scale-105 transition-transform duration-700" data-alt="Server rack infrastructure with cabling and blinking lights" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDutnb8pjqDE-tViyvw-F91kUuAgTomZNW0vbql9xRyPFZS7jyzsuL20IArL7sD1JMGKENfDdh756Ogs2jFGEbXaAbjEIXCFaGzoocReqgIq-JpDbSqgHdBAAPFm94Edbhaed7zAF1Dw3LpPoBfpVCnmKAmomQbPSAIYDNzYW3bfQAYiwSI68jrNCkLDZ3Ipyt4-r3lv2p-7qRL6Mv2d8nWBBjRLp6Kyo3RAYJKAOOXmc2P5L_4wHdDU0ajVsjFtK0i6buGevNsjyyb');"></div>
+<div class="relative z-10 p-10 md:p-16 flex flex-col md:flex-row items-center justify-between gap-8">
+<div class="max-w-2xl">
+<span class="text-primary font-bold text-sm tracking-widest uppercase mb-4 block">Caso de Éxito</span>
+<h2 class="text-3xl md:text-5xl font-black mb-6">Data Center Tier III: Monitoreo Global</h2>
+<p class="text-slate-300 text-lg leading-relaxed">
+                            Descubra cómo implementamos un sistema de monitoreo para más de 200 racks logrando una reducción del 15% en el PUE y cumplimiento total de facturación.
+                        </p>
+</div>
+<a class="inline-flex items-center gap-2 group/link bg-white text-background-dark px-8 py-4 rounded-xl font-bold text-lg hover:bg-primary hover:text-white transition-all whitespace-nowrap" href="#">
+                        Leer Caso de Estudio
+                        <span class="material-symbols-outlined group-hover/link:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+</div>
+</section>
+<section class="py-24 px-6 md:px-20 bg-white dark:bg-slate-950 text-center">
+<div class="max-w-3xl mx-auto space-y-8">
+<h2 class="text-4xl md:text-5xl font-black">¿Listo para optimizar su Data Center?</h2>
+<p class="text-slate-600 dark:text-slate-400 text-xl">
+                    Agende una reunión con nuestros especialistas y obtenga un diagnóstico inicial de su infraestructura de monitoreo.
+                </p>
+<div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+<button class="w-full sm:w-auto px-10 py-5 bg-primary text-white rounded-xl font-bold text-xl shadow-2xl shadow-primary/40 hover:scale-105 transition-all">
+                        Solicitar Asesoría para Data Centers
+                    </button>
+<button class="w-full sm:w-auto px-10 py-5 border border-slate-300 dark:border-slate-700 rounded-xl font-bold text-xl hover:bg-slate-50 dark:hover:bg-slate-900 transition-all">
+                        Hablar con un Ingeniero
+                    </button>
+</div>
+</div>
+</section>
+<footer class="bg-background-dark py-16 px-6 md:px-20 text-slate-400 border-t border-slate-800">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+<div class="space-y-6">
+<div class="flex items-center gap-3 text-white">
+<div class="size-6">
+<svg fill="currentColor" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M39.475 21.6262C40.358 21.4363 40.6863 21.5589 40.7581 21.5934C40.7876 21.655 40.8547 21.857 40.8082 22.3336C40.7408 23.0255 40.4502 24.0046 39.8572 25.2301C38.6799 27.6631 36.5085 30.6631 33.5858 33.5858C30.6631 36.5085 27.6632 38.6799 25.2301 39.8572C24.0046 40.4502 23.0255 40.7407 22.3336 40.8082C21.8571 40.8547 21.6551 40.7875 21.5934 40.7581C21.5589 40.6863 21.4363 40.358 21.6262 39.475C21.8562 38.4054 22.4689 36.9657 23.5038 35.2817C24.7575 33.2417 26.5497 30.9744 28.7621 28.762C30.9744 26.5497 33.2417 24.7574 35.2817 23.5037C36.9657 22.4689 38.4054 21.8562 39.475 21.6262ZM4.41189 29.2403L18.7597 43.5881C19.8813 44.7097 21.4027 44.9179 22.7217 44.7893C24.0585 44.659 25.5148 44.1631 26.9723 43.4579C29.9052 42.0387 33.2618 39.5667 36.4142 36.4142C39.5667 33.2618 42.0387 29.9052 43.4579 26.9723C44.1631 25.5148 44.659 24.0585 44.7893 22.7217C44.9179 21.4027 44.7097 19.8813 43.5881 18.7597L29.2403 4.41187C27.8527 3.02428 25.8765 3.02573 24.2861 3.36776C22.6081 3.72863 20.7334 4.58419 18.8396 5.74801C16.4978 7.18716 13.9881 9.18353 11.5858 11.5858C9.18354 13.988 7.18717 16.4978 5.74802 18.8396C4.58421 20.7334 3.72865 22.6081 3.36778 24.2861C3.02574 25.8765 3.02429 27.8527 4.41189 29.2403Z"></path>
+</svg>
+</div>
+<h2 class="text-lg font-bold">INPOWER</h2>
+</div>
+<p class="text-sm">Especialistas en monitoreo y gestión de energía para infraestructuras críticas. Solution Partner oficial de Janitza.</p>
+</div>
+<div>
+<h4 class="text-white font-bold mb-6 uppercase text-xs tracking-widest">Industrias</h4>
+<ul class="space-y-4 text-sm">
+<li><a class="hover:text-primary transition-colors" href="industry_data_centers_detail.html">Data Centers</a></li>
+<li><a class="hover:text-primary transition-colors" href="industry_healthcare_detail.html">Hospitales</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Industria 4.0</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Retail</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-white font-bold mb-6 uppercase text-xs tracking-widest">Empresa</h4>
+<ul class="space-y-4 text-sm">
+<li><a class="hover:text-primary transition-colors" href="about_us_janitza_partner.html">Sobre Nosotros</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Servicios</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Blog</a></li>
+<li><a class="hover:text-primary transition-colors" href="quote_flow_step_2_details_contact.html">Contacto</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-white font-bold mb-6 uppercase text-xs tracking-widest">Newsletter</h4>
+<div class="flex flex-col gap-4">
+<input class="bg-slate-800 border-none rounded-lg p-3 text-sm focus:ring-1 focus:ring-primary" placeholder="Email" type="email"/>
+<button class="bg-primary text-white font-bold py-3 rounded-lg text-sm">Suscribirse</button>
+</div>
+</div>
+</div>
+<div class="pt-8 border-t border-slate-800 flex flex-col md:flex-row justify-between items-center gap-4 text-xs">
+<p>© 2024 Inpower - Soluciones Energéticas. Todos los derechos reservados.</p>
+<div class="flex gap-6">
+<a class="hover:text-white transition-colors" href="#">Aviso Legal</a>
+<a class="hover:text-white transition-colors" href="#">Privacidad</a>
+<a class="hover:text-white transition-colors" href="#">Cookies</a>
+</div>
+</div>
+</footer>
+</div>
+</body></html>
