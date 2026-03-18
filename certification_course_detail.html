@@ -29,27 +29,29 @@
 </head>
 <body class="font-display bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 antialiased">
 <!-- Top Navigation Bar -->
-<header class="sticky top-0 z-50 bg-white/90 dark:bg-background-dark/90 backdrop-blur-md border-b border-primary/10">
-<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-<div class="flex items-center justify-between h-16">
+<header class="sticky top-0 z-50 w-full border-b border-primary/10 bg-white/80 dark:bg-background-dark/80 backdrop-blur-md px-4 md:px-10 lg:px-20 py-4">
+<div class="max-w-7xl mx-auto flex items-center justify-between">
+<div class="flex items-center gap-10">
 <div class="flex items-center gap-3">
-<div class="text-primary">
-<svg class="w-8 h-8" fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
-<path clip-rule="evenodd" d="M39.475 21.6262C40.358 21.4363 40.6863 21.5589 40.7581 21.5934C40.7876 21.655 40.8547 21.857 40.8082 22.3336C40.7408 23.0255 40.4502 24.0046 39.8572 25.2301C38.6799 27.6631 36.5085 30.6631 33.5858 33.5858C30.6631 36.5085 27.6632 38.6799 25.2301 39.8572C24.0046 40.4502 23.0255 40.7407 22.3336 40.8082C21.8571 40.8547 21.6551 40.7875 21.5934 40.7581C21.5589 40.6863 21.4363 40.358 21.6262 39.475C21.8562 38.4054 22.4689 36.9657 23.5038 35.2817C24.7575 33.2417 26.5497 30.9744 28.7621 28.762C30.9744 26.5497 33.2417 24.7574 35.2817 23.5037C36.9657 22.4689 38.4054 21.8562 39.475 21.6262ZM4.41189 29.2403L18.7597 43.5881C19.8813 44.7097 21.4027 44.9179 22.7217 44.7893C24.0585 44.659 25.5148 44.1631 26.9723 43.4579C29.9052 42.0387 33.2618 39.5667 36.4142 36.4142C39.5667 33.2618 42.0387 29.9052 43.4579 26.9723C44.1631 25.5148 44.659 24.0585 44.7893 22.7217C44.9179 21.4027 44.7097 19.8813 43.5881 18.7597L29.2403 4.41187C27.8527 3.02428 25.8765 3.02573 24.2861 3.36776C22.6081 3.72863 20.7334 4.58419 18.8396 5.74801C16.4978 7.18716 13.9881 9.18353 11.5858 11.5858C9.18354 13.988 7.18717 16.4978 5.74802 18.8396C4.58421 20.7334 3.72865 22.6081 3.36778 24.2861C3.02574 25.8765 3.02429 27.8527 4.41189 29.2403Z" fill="currentColor" fill-rule="evenodd"></path>
-</svg>
+<div class="flex h-10 w-10 items-center justify-center rounded-lg bg-primary text-white">
+<span class="material-symbols-outlined">bolt</span>
 </div>
-<span class="text-xl font-bold tracking-tight text-primary uppercase">Inpower</span>
+<h1 class="text-2xl font-black tracking-tighter text-primary dark:text-white uppercase">Inpower</h1>
 </div>
-<nav class="hidden md:flex items-center gap-8">
-<a class="text-sm font-semibold hover:text-primary transition-colors" href="technical_academy.html">Courses</a>
-<a class="text-sm font-semibold hover:text-primary transition-colors" href="certification_course_detail.html">Certifications</a>
-<a class="text-sm font-semibold hover:text-primary transition-colors" href="about_us_janitza_partner.html">Partners</a>
-<a class="text-sm font-semibold hover:text-primary transition-colors" href="quote_flow_step_2_details_contact.html">Contact</a>
+<nav class="hidden lg:flex items-center gap-8">
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="/gridvis_software_solution_page.html">Soluciones</a>
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="/product_catalog_landing_page.html">Productos</a>
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="/industries_landing_page.html">Industrias</a>
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="/about_us_janitza_partner.html">Nosotros</a>
 </nav>
-<div class="flex items-center gap-4">
-<button class="hidden sm:block bg-primary text-white px-6 py-2 rounded-lg font-bold text-sm hover:bg-primary/90 transition-all">Enroll Now</button>
-<span class="material-symbols-outlined text-slate-500 cursor-pointer">account_circle</span>
 </div>
+<div class="flex items-center gap-4">
+<button class="hidden md:flex h-11 items-center justify-center rounded-lg border border-primary/20 px-6 text-sm font-bold text-primary hover:bg-primary/5 transition-all">
+                        Login Portal
+                    </button>
+<button class="flex h-11 items-center justify-center rounded-lg bg-primary px-6 text-sm font-bold text-white shadow-lg shadow-primary/20 hover:scale-[1.02] transition-all active:scale-95">
+                        Contacto
+                    </button>
 </div>
 </div>
 </header>
@@ -332,47 +334,62 @@
 </div>
 </section>
 <!-- Footer -->
-<footer class="bg-primary py-20 text-white border-t border-white/10">
-<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-4 gap-12">
-<div class="col-span-1 md:col-span-1">
-<div class="flex items-center gap-3 mb-6">
-<div class="text-white">
-<svg class="w-8 h-8" fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
-<path clip-rule="evenodd" d="M39.475 21.6262C40.358 21.4363 40.6863 21.5589 40.7581 21.5934C40.7876 21.655 40.8547 21.857 40.8082 22.3336C40.7408 23.0255 40.4502 24.0046 39.8572 25.2301C38.6799 27.6631 36.5085 30.6631 33.5858 33.5858C30.6631 36.5085 27.6632 38.6799 25.2301 39.8572C24.0046 40.4502 23.0255 40.7407 22.3336 40.8082C21.8571 40.8547 21.6551 40.7875 21.5934 40.7581C21.5589 40.6863 21.4363 40.358 21.6262 39.475C21.8562 38.4054 22.4689 36.9657 23.5038 35.2817C24.7575 33.2417 26.5497 30.9744 28.7621 28.762C30.9744 26.5497 33.2417 24.7574 35.2817 23.5037C36.9657 22.4689 38.4054 21.8562 39.475 21.6262ZM4.41189 29.2403L18.7597 43.5881C19.8813 44.7097 21.4027 44.9179 22.7217 44.7893C24.0585 44.659 25.5148 44.1631 26.9723 43.4579C29.9052 42.0387 33.2618 39.5667 36.4142 36.4142C39.5667 33.2618 42.0387 29.9052 43.4579 26.9723C44.1631 25.5148 44.659 24.0585 44.7893 22.7217C44.9179 21.4027 44.7097 19.8813 43.5881 18.7597L29.2403 4.41187C27.8527 3.02428 25.8765 3.02573 24.2861 3.36776C22.6081 3.72863 20.7334 4.58419 18.8396 5.74801C16.4978 7.18716 13.9881 9.18353 11.5858 11.5858C9.18354 13.988 7.18717 16.4978 5.74802 18.8396C4.58421 20.7334 3.72865 22.6081 3.36778 24.2861C3.02574 25.8765 3.02429 27.8527 4.41189 29.2403Z" fill="currentColor" fill-rule="evenodd"></path>
-</svg>
+<footer class="bg-slate-900 text-slate-400 py-16 px-4 md:px-10">
+<div class="max-w-7xl mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+<div>
+<div class="flex items-center gap-3 text-white mb-6">
+<span class="material-symbols-outlined text-primary">bolt</span>
+<span class="text-2xl font-black tracking-tighter uppercase">Inpower</span>
 </div>
-<span class="text-xl font-bold tracking-tight uppercase">Inpower</span>
+<p class="text-sm leading-relaxed mb-6">Soluciones integrales de monitoreo energético y calidad de potencia. Janitza Solution Partner Autorizado.</p>
+<div class="flex items-center gap-4">
+<a class="h-10 w-10 rounded-lg bg-slate-800 flex items-center justify-center hover:bg-primary hover:text-white transition-all" href="#"><span class="material-symbols-outlined">share</span></a>
+<a class="h-10 w-10 rounded-lg bg-slate-800 flex items-center justify-center hover:bg-primary hover:text-white transition-all" href="#"><span class="material-symbols-outlined">link</span></a>
 </div>
-<p class="text-slate-400 text-sm">Industrial efficiency solutions through certified training and hardware integration.</p>
 </div>
 <div>
-<h4 class="font-bold mb-6">Navigation</h4>
-<ul class="space-y-3 text-sm text-slate-400">
-<li><a class="hover:text-white" href="technical_academy.html">All Courses</a></li>
-<li><a class="hover:text-white" href="about_us_janitza_partner.html">Janitza Partner Program</a></li>
-<li><a class="hover:text-white" href="about_us_janitza_partner.html">Consultancy Services</a></li>
-<li><a class="hover:text-white" href="case_study_data_center_tier_iii.html">Case Studies</a></li>
+<h4 class="text-white font-bold mb-6">Soluciones</h4>
+<ul class="space-y-4 text-sm">
+<li><a class="hover:text-primary transition-colors" href="/gridvis_software_solution_page.html">ISO 50001</a></li>
+<li><a class="hover:text-primary transition-colors" href="/gridvis_software_solution_page.html">Calidad de Energía</a></li>
+<li><a class="hover:text-primary transition-colors" href="/service_support_portal.html">Gestión de Activos</a></li>
+<li><a class="hover:text-primary transition-colors" href="/gridvis_software_solution_page.html">Monitoreo RCM</a></li>
 </ul>
 </div>
 <div>
-<h4 class="font-bold mb-6">Contact Us</h4>
-<ul class="space-y-3 text-sm text-slate-400">
-<li class="flex items-center gap-2"><span class="material-symbols-outlined text-sm">mail</span> training@inpower.com</li>
-<li class="flex items-center gap-2"><span class="material-symbols-outlined text-sm">phone</span> +1 (555) 902-3412</li>
-<li class="flex items-center gap-2"><span class="material-symbols-outlined text-sm">location_on</span> Industrial Park, Suite 400</li>
+<h4 class="text-white font-bold mb-6">Empresa</h4>
+<ul class="space-y-4 text-sm">
+<li><a class="hover:text-primary transition-colors" href="/about_us_janitza_partner.html">Sobre Nosotros</a></li>
+<li><a class="hover:text-primary transition-colors" href="/gridvis_page_with_success_stories.html">Casos de Éxito</a></li>
+<li><a class="hover:text-primary transition-colors" href="/technical_library_downloads.html">Blog Técnico</a></li>
+<li><a class="hover:text-primary transition-colors" href="/quote_flow_step_2_details_contact.html">Contacto</a></li>
 </ul>
 </div>
 <div>
-<h4 class="font-bold mb-6">Newsletter</h4>
-<p class="text-sm text-slate-400 mb-4">Stay updated on energy regulations.</p>
-<div class="flex">
-<input class="bg-white/10 border-0 rounded-l-lg focus:ring-0 text-sm w-full" placeholder="Email" type="email"/>
-<button class="bg-white text-primary px-4 rounded-r-lg font-bold">Join</button>
+<h4 class="text-white font-bold mb-6">Contacto</h4>
+<ul class="space-y-4 text-sm">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-xl">location_on</span>
+<span data-location="Mexico City">Av. Industrial 450, Ciudad de México, MX.</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-xl">mail</span>
+<span>contacto@inpower-solutions.com</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-xl">call</span>
+<span>+52 (55) 1234-5678</span>
+</li>
+</ul>
+</div>
+</div>
+<div class="pt-8 border-t border-slate-800 flex flex-col md:flex-row justify-between items-center gap-6">
+<p class="text-xs">© 2024 Inpower Energy Solutions. Todos los derechos reservados.</p>
+<div class="flex items-center gap-4">
+<img alt="Janitza Solution Partner Logo" class="h-8 opacity-70 grayscale hover:grayscale-0 transition-all" data-alt="Logotipo Janitza Solution Partner" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAk1W0rPGeLUZMkCJZZO5ZgyD8RyCjVyjngZMKioUp8Au9d97AHPD0Coe5MWsrDg9oHn2hVhDnBCeKJssIqDrSoU5KmtKEkF0LSKknaYNl1VAGBFMXUVhKSAuIrs6c1U9jRDy132dhjNdCIsHZiCeIvejo6HWW5VCm5alxF6Hbnxikld5pbFU2VFsjydPnqm6G4qn1qwxnlJozx3ve904MTY0m-h8f8zMPKsIgkM30scV9C2cJkP5_2Obx4r6C2LpUpXQxWdwi306VL"/>
 </div>
 </div>
 </div>
-<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-16 pt-8 border-t border-white/10 text-center text-xs text-slate-500">
-            © 2024 Inpower Industrial Solutions. Official Janitza Training Partner. All rights reserved.
-        </div>
 </footer>
 </body></html>

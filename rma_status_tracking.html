@@ -43,11 +43,11 @@
 </div>
 </div>
 <nav class="flex flex-col gap-2">
-<a class="flex items-center gap-3 px-3 py-2.5 rounded-lg bg-primary/10 text-primary dark:bg-primary/20 dark:text-blue-400 transition-colors" href="rma_status_tracking.html">
+<a class="flex items-center gap-3 px-3 py-2.5 rounded-lg bg-primary/10 text-primary dark:bg-primary/20 dark:text-blue-400 transition-colors" href="/rma_status_tracking.html">
 <span class="material-symbols-outlined text-[24px]">dashboard</span>
 <p class="text-sm font-medium leading-normal">RMA Dashboard</p>
 </a>
-<a class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors" href="submit_a_technical_support_ticket.html">
+<a class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors" href="/submit_a_technical_support_ticket.html">
 <span class="material-symbols-outlined text-[24px]">confirmation_number</span>
 <p class="text-sm font-medium leading-normal">Submit Ticket</p>
 </a>
@@ -55,7 +55,7 @@
 <span class="material-symbols-outlined text-[24px]">description</span>
 <p class="text-sm font-medium leading-normal">Documentation</p>
 </a>
-<a class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors" href="service_support_portal.html">
+<a class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors" href="/service_support_portal.html">
 <span class="material-symbols-outlined text-[24px]">call</span>
 <p class="text-sm font-medium leading-normal">Support Hotline</p>
 </a>
@@ -74,14 +74,30 @@
 <!-- Main Content -->
 <main class="flex-1 flex flex-col min-w-0">
 <!-- Header -->
-<header class="flex items-center justify-between whitespace-nowrap border-b border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 px-8 py-4">
-<div class="flex items-center gap-4 text-slate-900 dark:text-white">
-<h2 class="text-lg font-bold leading-tight tracking-tight">RMA Tracking</h2>
+<header class="sticky top-0 z-50 w-full border-b border-primary/10 bg-white/80 dark:bg-background-dark/80 backdrop-blur-md px-4 md:px-10 lg:px-20 py-4">
+<div class="max-w-7xl mx-auto flex items-center justify-between">
+<div class="flex items-center gap-10">
+<div class="flex items-center gap-3">
+<div class="flex h-10 w-10 items-center justify-center rounded-lg bg-primary text-white">
+<span class="material-symbols-outlined">bolt</span>
+</div>
+<h1 class="text-2xl font-black tracking-tighter text-primary dark:text-white uppercase">Inpower</h1>
+</div>
+<nav class="hidden lg:flex items-center gap-8">
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="/gridvis_software_solution_page.html">Soluciones</a>
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="/product_catalog_landing_page.html">Productos</a>
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="/industries_landing_page.html">Industrias</a>
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="/about_us_janitza_partner.html">Nosotros</a>
+</nav>
 </div>
 <div class="flex items-center gap-4">
-<button class="p-2 text-slate-400 hover:text-slate-600 dark:hover:text-slate-200 transition-colors">
-<span class="material-symbols-outlined">notifications</span>
-</button>
+<button class="hidden md:flex h-11 items-center justify-center rounded-lg border border-primary/20 px-6 text-sm font-bold text-primary hover:bg-primary/5 transition-all">
+                        Login Portal
+                    </button>
+<button class="flex h-11 items-center justify-center rounded-lg bg-primary px-6 text-sm font-bold text-white shadow-lg shadow-primary/20 hover:scale-[1.02] transition-all active:scale-95">
+                        Contacto
+                    </button>
+</div>
 </div>
 </header>
 <div class="flex-1 overflow-y-auto p-8 max-w-5xl mx-auto w-full">
@@ -106,10 +122,10 @@
 </div>
 <!-- Tabs -->
 <div class="mb-6 border-b border-slate-200 dark:border-slate-800 flex gap-8">
-<a class="flex items-center justify-center border-b-[3px] border-primary text-primary dark:text-blue-400 pb-3 pt-2" href="rma_status_tracking.html">
+<a class="flex items-center justify-center border-b-[3px] border-primary text-primary dark:text-blue-400 pb-3 pt-2" href="/rma_status_tracking.html">
 <p class="text-sm font-bold leading-normal tracking-wide">Active RMAs (2)</p>
 </a>
-<a class="flex items-center justify-center border-b-[3px] border-transparent text-slate-500 hover:text-slate-700 dark:hover:text-slate-300 pb-3 pt-2 transition-colors" href="rma_status_tracking.html">
+<a class="flex items-center justify-center border-b-[3px] border-transparent text-slate-500 hover:text-slate-700 dark:hover:text-slate-300 pb-3 pt-2 transition-colors" href="/rma_status_tracking.html">
 <p class="text-sm font-medium leading-normal tracking-wide">Historical RMAs</p>
 </a>
 </div>
